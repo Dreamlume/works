@@ -1,0 +1,408 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="7680" height="4320" viewBox="0 0 7680 4320">
+<defs>
+  <linearGradient id="headerGrad" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#E9F1FF"/>
+    <stop offset=".55" stop-color="#F4F7FC"/>
+    <stop offset="1" stop-color="#EDF9F6"/>
+  </linearGradient>
+  <linearGradient id="resultGrad" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#EAF1FF"/>
+    <stop offset=".5" stop-color="#F0EDFF"/>
+    <stop offset="1" stop-color="#EAF8F2"/>
+  </linearGradient>
+  <style>
+    .reg { font-family:"Noto Sans CJK SC","Microsoft YaHei","PingFang SC",sans-serif; font-weight:400; }
+    .bold { font-family:"Noto Sans CJK SC","Microsoft YaHei","PingFang SC",sans-serif; font-weight:700; }
+  </style>
+</defs>
+<rect width="7680" height="4320" fill="#F5F8FC"/>
+<rect x="0" y="0" width="7680" height="780" fill="url(#headerGrad)"/>
+
+<line x1="0" y1="0" x2="0" y2="4320" stroke="#EEF2F8" stroke-width="2"/>
+<line x1="240" y1="0" x2="240" y2="4320" stroke="#EEF2F8" stroke-width="2"/>
+<line x1="480" y1="0" x2="480" y2="4320" stroke="#EEF2F8" stroke-width="2"/>
+<line x1="720" y1="0" x2="720" y2="4320" stroke="#EEF2F8" stroke-width="2"/>
+<line x1="960" y1="0" x2="960" y2="4320" stroke="#EEF2F8" stroke-width="2"/>
+<line x1="1200" y1="0" x2="1200" y2="4320" stroke="#EEF2F8" stroke-width="2"/>
+<line x1="1440" y1="0" x2="1440" y2="4320" stroke="#EEF2F8" stroke-width="2"/>
+<line x1="1680" y1="0" x2="1680" y2="4320" stroke="#EEF2F8" stroke-width="2"/>
+<line x1="1920" y1="0" x2="1920" y2="4320" stroke="#EEF2F8" stroke-width="2"/>
+<line x1="2160" y1="0" x2="2160" y2="4320" stroke="#EEF2F8" stroke-width="2"/>
+<line x1="2400" y1="0" x2="2400" y2="4320" stroke="#EEF2F8" stroke-width="2"/>
+<line x1="2640" y1="0" x2="2640" y2="4320" stroke="#EEF2F8" stroke-width="2"/>
+<line x1="2880" y1="0" x2="2880" y2="4320" stroke="#EEF2F8" stroke-width="2"/>
+<line x1="3120" y1="0" x2="3120" y2="4320" stroke="#EEF2F8" stroke-width="2"/>
+<line x1="3360" y1="0" x2="3360" y2="4320" stroke="#EEF2F8" stroke-width="2"/>
+<line x1="3600" y1="0" x2="3600" y2="4320" stroke="#EEF2F8" stroke-width="2"/>
+<line x1="3840" y1="0" x2="3840" y2="4320" stroke="#EEF2F8" stroke-width="2"/>
+<line x1="4080" y1="0" x2="4080" y2="4320" stroke="#EEF2F8" stroke-width="2"/>
+<line x1="4320" y1="0" x2="4320" y2="4320" stroke="#EEF2F8" stroke-width="2"/>
+<line x1="4560" y1="0" x2="4560" y2="4320" stroke="#EEF2F8" stroke-width="2"/>
+<line x1="4800" y1="0" x2="4800" y2="4320" stroke="#EEF2F8" stroke-width="2"/>
+<line x1="5040" y1="0" x2="5040" y2="4320" stroke="#EEF2F8" stroke-width="2"/>
+<line x1="5280" y1="0" x2="5280" y2="4320" stroke="#EEF2F8" stroke-width="2"/>
+<line x1="5520" y1="0" x2="5520" y2="4320" stroke="#EEF2F8" stroke-width="2"/>
+<line x1="5760" y1="0" x2="5760" y2="4320" stroke="#EEF2F8" stroke-width="2"/>
+<line x1="6000" y1="0" x2="6000" y2="4320" stroke="#EEF2F8" stroke-width="2"/>
+<line x1="6240" y1="0" x2="6240" y2="4320" stroke="#EEF2F8" stroke-width="2"/>
+<line x1="6480" y1="0" x2="6480" y2="4320" stroke="#EEF2F8" stroke-width="2"/>
+<line x1="6720" y1="0" x2="6720" y2="4320" stroke="#EEF2F8" stroke-width="2"/>
+<line x1="6960" y1="0" x2="6960" y2="4320" stroke="#EEF2F8" stroke-width="2"/>
+<line x1="7200" y1="0" x2="7200" y2="4320" stroke="#EEF2F8" stroke-width="2"/>
+<line x1="7440" y1="0" x2="7440" y2="4320" stroke="#EEF2F8" stroke-width="2"/>
+<line x1="0" y1="0" x2="7680" y2="0" stroke="#EEF2F8" stroke-width="2"/>
+<line x1="0" y1="240" x2="7680" y2="240" stroke="#EEF2F8" stroke-width="2"/>
+<line x1="0" y1="480" x2="7680" y2="480" stroke="#EEF2F8" stroke-width="2"/>
+<line x1="0" y1="720" x2="7680" y2="720" stroke="#EEF2F8" stroke-width="2"/>
+<line x1="0" y1="960" x2="7680" y2="960" stroke="#EEF2F8" stroke-width="2"/>
+<line x1="0" y1="1200" x2="7680" y2="1200" stroke="#EEF2F8" stroke-width="2"/>
+<line x1="0" y1="1440" x2="7680" y2="1440" stroke="#EEF2F8" stroke-width="2"/>
+<line x1="0" y1="1680" x2="7680" y2="1680" stroke="#EEF2F8" stroke-width="2"/>
+<line x1="0" y1="1920" x2="7680" y2="1920" stroke="#EEF2F8" stroke-width="2"/>
+<line x1="0" y1="2160" x2="7680" y2="2160" stroke="#EEF2F8" stroke-width="2"/>
+<line x1="0" y1="2400" x2="7680" y2="2400" stroke="#EEF2F8" stroke-width="2"/>
+<line x1="0" y1="2640" x2="7680" y2="2640" stroke="#EEF2F8" stroke-width="2"/>
+<line x1="0" y1="2880" x2="7680" y2="2880" stroke="#EEF2F8" stroke-width="2"/>
+<line x1="0" y1="3120" x2="7680" y2="3120" stroke="#EEF2F8" stroke-width="2"/>
+<line x1="0" y1="3360" x2="7680" y2="3360" stroke="#EEF2F8" stroke-width="2"/>
+<line x1="0" y1="3600" x2="7680" y2="3600" stroke="#EEF2F8" stroke-width="2"/>
+<line x1="0" y1="3840" x2="7680" y2="3840" stroke="#EEF2F8" stroke-width="2"/>
+<line x1="0" y1="4080" x2="7680" y2="4080" stroke="#EEF2F8" stroke-width="2"/>
+<rect x="300" y="205" width="540" height="106" rx="53.0" fill="#EAF1FF"/>
+<text x="570.0" y="278.14" class="bold" font-size="44" fill="#2F6BFF" text-anchor="middle">功能总览 · 浅色版</text>
+<text x="300" y="525" class="bold" font-size="184" fill="#172033" text-anchor="start">AI 美术诊断与质量修复工具</text>
+<text x="305" y="685" class="reg" font-size="62" fill="#68758C" text-anchor="start">面向游戏宣传图、美宣图与角色素材的诊断、优化、风格迁移和动作融合工作流</text>
+<rect x="6094" y="268" width="1300" height="420" rx="56" fill="#25324C" opacity=".08"/>
+<rect x="6080" y="250" width="1300" height="420" rx="56" fill="#FFFFFF" stroke="#DCE5F1" stroke-width="3"/>
+<circle cx="6275" cy="450" r="108" fill="#E9FAFB"/>
+<line x1="6233.0" y1="492.0" x2="6308.0" y2="417.0" stroke="#24B8C6" stroke-width="13.5" stroke-linecap="round"/>
+<line x1="6233.0" y1="415.5" x2="6233.0" y2="435.0" stroke="#24B8C6" stroke-width="7.5" stroke-linecap="round"/>
+<line x1="6223.25" y1="425.25" x2="6242.75" y2="425.25" stroke="#24B8C6" stroke-width="7.5" stroke-linecap="round"/>
+<line x1="6317.0" y1="480.0" x2="6317.0" y2="499.5" stroke="#24B8C6" stroke-width="7.5" stroke-linecap="round"/>
+<line x1="6307.25" y1="489.75" x2="6326.75" y2="489.75" stroke="#24B8C6" stroke-width="7.5" stroke-linecap="round"/>
+<line x1="6305.0" y1="402.0" x2="6305.0" y2="421.5" stroke="#24B8C6" stroke-width="7.5" stroke-linecap="round"/>
+<line x1="6295.25" y1="411.75" x2="6314.75" y2="411.75" stroke="#24B8C6" stroke-width="7.5" stroke-linecap="round"/>
+<text x="6460" y="398" class="bold" font-size="68" fill="#172033" text-anchor="start">一站式完成</text>
+<text x="6460" y="505" class="bold" font-size="47" fill="#24B8C6" text-anchor="start">诊断 → 生成 → 对比 → 保存</text>
+<text x="6460" y="590" class="reg" font-size="40" fill="#68758C" text-anchor="start">多个模块共享历史记录与结果管理</text>
+<text x="300" y="900" class="bold" font-size="78" fill="#172033" text-anchor="start">统一操作流程</text>
+<line x1="300" y1="945" x2="7380" y2="945" stroke="#DCE5F1" stroke-width="4" stroke-linecap="round"/>
+<rect x="314" y="1043" width="1110" height="360" rx="42" fill="#25324C" opacity=".08"/>
+<rect x="300" y="1025" width="1110" height="360" rx="42" fill="#FFFFFF" stroke="#DCE5F1" stroke-width="3"/>
+<circle cx="428" cy="1145" r="78" fill="#EAF1FF"/>
+<line x1="428" y1="1173.0" x2="428" y2="1113.64" stroke="#2F6BFF" stroke-width="10.08" stroke-linecap="round"/>
+<line x1="428" y1="1113.64" x2="407.84" y2="1137.16" stroke="#2F6BFF" stroke-width="10.08" stroke-linecap="round"/>
+<line x1="428" y1="1113.64" x2="448.16" y2="1137.16" stroke="#2F6BFF" stroke-width="10.08" stroke-linecap="round"/>
+<rect x="389.92" y="1162.92" width="76.16000000000001" height="22.400000000000002" rx="5.6000000000000005" fill="none" stroke="#2F6BFF" stroke-width="7.840000000000001"/>
+<rect x="1180" y="1070" width="150" height="68" rx="34.0" fill="#EAF1FF"/>
+<text x="1255.0" y="1116.92" class="bold" font-size="30" fill="#2F6BFF" text-anchor="middle">01</text>
+<text x="370" y="1270" class="bold" font-size="48" fill="#172033" text-anchor="start">上传图片</text>
+<text x="370" y="1340" class="reg" font-size="33" fill="#68758C" text-anchor="start">JPG / PNG / WebP</text>
+<line x1="1422" y1="1205.0" x2="1470" y2="1205.0" stroke="#5B8CFF" stroke-width="14" stroke-linecap="round"/>
+<polygon points="1470,1205.0 1445.7512886940358,1219.0 1445.7512886940358,1191.0" fill="#5B8CFF"/>
+<rect x="1500" y="1043" width="1110" height="360" rx="42" fill="#25324C" opacity=".08"/>
+<rect x="1486" y="1025" width="1110" height="360" rx="42" fill="#FFFFFF" stroke="#DCE5F1" stroke-width="3"/>
+<circle cx="1614" cy="1145" r="78" fill="#F0EDFF"/>
+<circle cx="1608.4" cy="1141.64" r="24.64" fill="none" stroke="#7A61FF" stroke-width="8.96"/>
+<line x1="1625.2" y1="1158.44" x2="1649.84" y2="1183.08" stroke="#7A61FF" stroke-width="8.96" stroke-linecap="round"/>
+<line x1="1634.16" y1="1106.92" x2="1634.16" y2="1131.56" stroke="#7A61FF" stroke-width="6.72" stroke-linecap="round"/>
+<line x1="1621.84" y1="1119.24" x2="1646.48" y2="1119.24" stroke="#7A61FF" stroke-width="6.72" stroke-linecap="round"/>
+<rect x="2366" y="1070" width="150" height="68" rx="34.0" fill="#F0EDFF"/>
+<text x="2441.0" y="1116.92" class="bold" font-size="30" fill="#7A61FF" text-anchor="middle">02</text>
+<text x="1556" y="1270" class="bold" font-size="48" fill="#172033" text-anchor="start">选择功能模块</text>
+<text x="1556" y="1340" class="reg" font-size="33" fill="#68758C" text-anchor="start">诊断 / 动作 / 风格</text>
+<line x1="2608" y1="1205.0" x2="2656" y2="1205.0" stroke="#5B8CFF" stroke-width="14" stroke-linecap="round"/>
+<polygon points="2656,1205.0 2631.751288694036,1219.0 2631.751288694036,1191.0" fill="#5B8CFF"/>
+<rect x="2686" y="1043" width="1110" height="360" rx="42" fill="#25324C" opacity=".08"/>
+<rect x="2672" y="1025" width="1110" height="360" rx="42" fill="#FFFFFF" stroke="#DCE5F1" stroke-width="3"/>
+<circle cx="2800" cy="1145" r="78" fill="#E9FAFB"/>
+<line x1="2768.64" y1="1176.36" x2="2824.64" y2="1120.36" stroke="#24B8C6" stroke-width="10.08" stroke-linecap="round"/>
+<line x1="2768.64" y1="1119.24" x2="2768.64" y2="1133.8" stroke="#24B8C6" stroke-width="5.6000000000000005" stroke-linecap="round"/>
+<line x1="2761.36" y1="1126.52" x2="2775.92" y2="1126.52" stroke="#24B8C6" stroke-width="5.6000000000000005" stroke-linecap="round"/>
+<line x1="2831.36" y1="1167.4" x2="2831.36" y2="1181.96" stroke="#24B8C6" stroke-width="5.6000000000000005" stroke-linecap="round"/>
+<line x1="2824.08" y1="1174.68" x2="2838.64" y2="1174.68" stroke="#24B8C6" stroke-width="5.6000000000000005" stroke-linecap="round"/>
+<line x1="2822.4" y1="1109.16" x2="2822.4" y2="1123.72" stroke="#24B8C6" stroke-width="5.6000000000000005" stroke-linecap="round"/>
+<line x1="2815.12" y1="1116.44" x2="2829.68" y2="1116.44" stroke="#24B8C6" stroke-width="5.6000000000000005" stroke-linecap="round"/>
+<rect x="3552" y="1070" width="150" height="68" rx="34.0" fill="#E9FAFB"/>
+<text x="3627.0" y="1116.92" class="bold" font-size="30" fill="#24B8C6" text-anchor="middle">03</text>
+<text x="2742" y="1270" class="bold" font-size="48" fill="#172033" text-anchor="start">AI 分析与参数控制</text>
+<text x="2742" y="1340" class="reg" font-size="33" fill="#68758C" text-anchor="start">问题识别 / 预设 / 强度</text>
+<line x1="3794" y1="1205.0" x2="3842" y2="1205.0" stroke="#5B8CFF" stroke-width="14" stroke-linecap="round"/>
+<polygon points="3842,1205.0 3817.751288694036,1219.0 3817.751288694036,1191.0" fill="#5B8CFF"/>
+<rect x="3872" y="1043" width="1110" height="360" rx="42" fill="#25324C" opacity=".08"/>
+<rect x="3858" y="1025" width="1110" height="360" rx="42" fill="#FFFFFF" stroke="#DCE5F1" stroke-width="3"/>
+<circle cx="3986" cy="1145" r="78" fill="#FFF3E7"/>
+<circle cx="3970.32" cy="1120.36" r="11.200000000000001" fill="#F49A45"/>
+<line x1="3974.8" y1="1133.8" x2="3994.96" y2="1153.96" stroke="#F49A45" stroke-width="8.96" stroke-linecap="round"/>
+<line x1="3994.96" y1="1153.96" x2="4019.6" y2="1142.76" stroke="#F49A45" stroke-width="8.96" stroke-linecap="round"/>
+<line x1="3988.24" y1="1147.24" x2="3963.6" y2="1176.36" stroke="#F49A45" stroke-width="8.96" stroke-linecap="round"/>
+<line x1="3994.96" y1="1153.96" x2="4010.64" y2="1180.84" stroke="#F49A45" stroke-width="8.96" stroke-linecap="round"/>
+<rect x="4738" y="1070" width="150" height="68" rx="34.0" fill="#FFF3E7"/>
+<text x="4813.0" y="1116.92" class="bold" font-size="30" fill="#F49A45" text-anchor="middle">04</text>
+<text x="3928" y="1270" class="bold" font-size="48" fill="#172033" text-anchor="start">生成处理结果</text>
+<text x="3928" y="1340" class="reg" font-size="33" fill="#68758C" text-anchor="start">组合优化 / 融合 / 迁移</text>
+<line x1="4980" y1="1205.0" x2="5028" y2="1205.0" stroke="#5B8CFF" stroke-width="14" stroke-linecap="round"/>
+<polygon points="5028,1205.0 5003.751288694036,1219.0 5003.751288694036,1191.0" fill="#5B8CFF"/>
+<rect x="5058" y="1043" width="1110" height="360" rx="42" fill="#25324C" opacity=".08"/>
+<rect x="5044" y="1025" width="1110" height="360" rx="42" fill="#FFFFFF" stroke="#DCE5F1" stroke-width="3"/>
+<circle cx="5172" cy="1145" r="78" fill="#EAF8F2"/>
+<rect x="5132.8" y="1115.88" width="31.360000000000003" height="58.24" rx="4.48" fill="none" stroke="#2DB77B" stroke-width="7.840000000000001"/>
+<rect x="5179.84" y="1115.88" width="31.360000000000003" height="58.24" rx="4.48" fill="none" stroke="#2DB77B" stroke-width="7.840000000000001"/>
+<line x1="5169.76" y1="1145" x2="5174.24" y2="1145" stroke="#2DB77B" stroke-width="5.6000000000000005" stroke-linecap="round"/>
+<polygon points="5174.24,1145 5166.480412382091,1149.48 5166.480412382091,1140.52" fill="#2DB77B"/>
+<rect x="5924" y="1070" width="150" height="68" rx="34.0" fill="#EAF8F2"/>
+<text x="5999.0" y="1116.92" class="bold" font-size="30" fill="#2DB77B" text-anchor="middle">05</text>
+<text x="5114" y="1270" class="bold" font-size="48" fill="#172033" text-anchor="start">对比与下载</text>
+<text x="5114" y="1340" class="reg" font-size="33" fill="#68758C" text-anchor="start">原图 / 结果图 / 滑动对比</text>
+<line x1="6166" y1="1205.0" x2="6214" y2="1205.0" stroke="#5B8CFF" stroke-width="14" stroke-linecap="round"/>
+<polygon points="6214,1205.0 6189.751288694036,1219.0 6189.751288694036,1191.0" fill="#5B8CFF"/>
+<rect x="6244" y="1043" width="1110" height="360" rx="42" fill="#25324C" opacity=".08"/>
+<rect x="6230" y="1025" width="1110" height="360" rx="42" fill="#FFFFFF" stroke="#DCE5F1" stroke-width="3"/>
+<circle cx="6358" cy="1145" r="78" fill="#EAF1FF"/>
+<circle cx="6358" cy="1145" r="34.72" fill="none" stroke="#2F6BFF" stroke-width="8.4"/>
+<line x1="6358" y1="1145" x2="6358" y2="1127.08" stroke="#2F6BFF" stroke-width="7.840000000000001" stroke-linecap="round"/>
+<line x1="6358" y1="1145" x2="6375.92" y2="1153.96" stroke="#2F6BFF" stroke-width="7.840000000000001" stroke-linecap="round"/>
+<polygon points="6319.92,1141.64 6344.56,1133.8 6333.36,1158.44" fill="#2F6BFF"/>
+<rect x="7110" y="1070" width="150" height="68" rx="34.0" fill="#EAF1FF"/>
+<text x="7185.0" y="1116.92" class="bold" font-size="30" fill="#2F6BFF" text-anchor="middle">06</text>
+<text x="6300" y="1270" class="bold" font-size="48" fill="#172033" text-anchor="start">自动保存历史</text>
+<text x="6300" y="1340" class="reg" font-size="33" fill="#68758C" text-anchor="start">详情 / 下载 / 删除 / 清空</text>
+<text x="300" y="1525" class="bold" font-size="78" fill="#172033" text-anchor="start">三条核心处理流程</text>
+<text x="1080" y="1525" class="reg" font-size="44" fill="#68758C" text-anchor="start">每条流程独立生成，结果统一进入对比、下载和历史管理</text>
+<rect x="314" y="1673" width="7080" height="570" rx="50" fill="#25324C" opacity=".08"/>
+<rect x="300" y="1655" width="7080" height="570" rx="50" fill="#FFFFFF" stroke="#DCE5F1" stroke-width="3"/>
+<rect x="342" y="1697" width="1450" height="486" rx="38" fill="#EAF1FF"/>
+<rect x="385" y="1735" width="160" height="66" rx="33.0" fill="#FFFFFF"/>
+<text x="465.0" y="1780.54" class="bold" font-size="30" fill="#2F6BFF" text-anchor="middle">01</text>
+<text x="385" y="1840" class="bold" font-size="54" fill="#172033" text-anchor="start">图片诊断与组合优化</text>
+<text x="385" y="1910" class="reg" font-size="34" fill="#68758C" text-anchor="start">先识别问题，再按勾选项进行综合修复</text>
+<rect x="385" y="1990" width="42" height="42" rx="10" fill="#FFFFFF" stroke="#2F6BFF" stroke-width="4"/>
+<line x1="395" y1="2012" x2="404" y2="2021" stroke="#2F6BFF" stroke-width="5" stroke-linecap="round"/>
+<line x1="404" y1="2021" x2="419" y2="2002" stroke="#2F6BFF" stroke-width="5" stroke-linecap="round"/>
+<text x="443" y="2024" class="reg" font-size="28" fill="#68758C" text-anchor="start">构图与视觉层级</text>
+<rect x="995" y="1990" width="42" height="42" rx="10" fill="#FFFFFF" stroke="#2F6BFF" stroke-width="4"/>
+<line x1="1005" y1="2012" x2="1014" y2="2021" stroke="#2F6BFF" stroke-width="5" stroke-linecap="round"/>
+<line x1="1014" y1="2021" x2="1029" y2="2002" stroke="#2F6BFF" stroke-width="5" stroke-linecap="round"/>
+<text x="1053" y="2024" class="reg" font-size="28" fill="#68758C" text-anchor="start">色彩与光影</text>
+<rect x="385" y="2058" width="42" height="42" rx="10" fill="#FFFFFF" stroke="#2F6BFF" stroke-width="4"/>
+<line x1="395" y1="2080" x2="404" y2="2089" stroke="#2F6BFF" stroke-width="5" stroke-linecap="round"/>
+<line x1="404" y1="2089" x2="419" y2="2070" stroke="#2F6BFF" stroke-width="5" stroke-linecap="round"/>
+<text x="443" y="2092" class="reg" font-size="28" fill="#68758C" text-anchor="start">画质与材质</text>
+<rect x="995" y="2058" width="42" height="42" rx="10" fill="#FFFFFF" stroke="#2F6BFF" stroke-width="4"/>
+<line x1="1005" y1="2080" x2="1014" y2="2089" stroke="#2F6BFF" stroke-width="5" stroke-linecap="round"/>
+<line x1="1014" y1="2089" x2="1029" y2="2070" stroke="#2F6BFF" stroke-width="5" stroke-linecap="round"/>
+<text x="1053" y="2092" class="reg" font-size="28" fill="#68758C" text-anchor="start">局部结构合理性</text>
+<rect x="385" y="2126" width="42" height="42" rx="10" fill="#FFFFFF" stroke="#2F6BFF" stroke-width="4"/>
+<line x1="395" y1="2148" x2="404" y2="2157" stroke="#2F6BFF" stroke-width="5" stroke-linecap="round"/>
+<line x1="404" y1="2157" x2="419" y2="2138" stroke="#2F6BFF" stroke-width="5" stroke-linecap="round"/>
+<text x="443" y="2160" class="reg" font-size="28" fill="#68758C" text-anchor="start">文字与 Logo</text>
+<rect x="995" y="2126" width="42" height="42" rx="10" fill="#FFFFFF" stroke="#2F6BFF" stroke-width="4"/>
+<line x1="1005" y1="2148" x2="1014" y2="2157" stroke="#2F6BFF" stroke-width="5" stroke-linecap="round"/>
+<line x1="1014" y1="2157" x2="1029" y2="2138" stroke="#2F6BFF" stroke-width="5" stroke-linecap="round"/>
+<text x="1053" y="2160" class="reg" font-size="28" fill="#68758C" text-anchor="start">商业宣传效果</text>
+<rect x="1870" y="1735" width="980" height="390" rx="34" fill="#FBFCFE" stroke="#DCE5F1" stroke-width="2"/>
+<circle cx="1960" cy="1810" r="46" fill="#EAF1FF"/>
+<text x="1960" y="1827" class="bold" font-size="30" fill="#2F6BFF" text-anchor="middle">1</text>
+<text x="1925" y="1915" class="bold" font-size="39" fill="#172033" text-anchor="start">上传原图</text>
+<text x="1925" y="1985" class="reg" font-size="29" fill="#68758C" text-anchor="start">进入图片诊断</text>
+<line x1="2865" y1="1935" x2="2906" y2="1935" stroke="#2F6BFF" stroke-width="12" stroke-linecap="round"/>
+<polygon points="2906,1935 2885.2153903091735,1947.0 2885.2153903091735,1923.0" fill="#2F6BFF"/>
+<rect x="2920" y="1735" width="980" height="390" rx="34" fill="#FBFCFE" stroke="#DCE5F1" stroke-width="2"/>
+<circle cx="3010" cy="1810" r="46" fill="#EAF1FF"/>
+<text x="3010" y="1827" class="bold" font-size="30" fill="#2F6BFF" text-anchor="middle">2</text>
+<text x="2975" y="1915" class="bold" font-size="39" fill="#172033" text-anchor="start">AI 多维诊断</text>
+<text x="2975" y="1985" class="reg" font-size="29" fill="#68758C" text-anchor="start">构图 / 色彩 / 画质 / 局部 / 文案</text>
+<line x1="3915" y1="1935" x2="3956" y2="1935" stroke="#2F6BFF" stroke-width="12" stroke-linecap="round"/>
+<polygon points="3956,1935 3935.2153903091735,1947.0 3935.2153903091735,1923.0" fill="#2F6BFF"/>
+<rect x="3970" y="1735" width="980" height="390" rx="34" fill="#FBFCFE" stroke="#DCE5F1" stroke-width="2"/>
+<circle cx="4060" cy="1810" r="46" fill="#EAF1FF"/>
+<text x="4060" y="1827" class="bold" font-size="30" fill="#2F6BFF" text-anchor="middle">3</text>
+<text x="4025" y="1915" class="bold" font-size="39" fill="#172033" text-anchor="start">勾选修复项</text>
+<text x="4025" y="1985" class="reg" font-size="29" fill="#68758C" text-anchor="start">分类全选或单项选择</text>
+<line x1="4965" y1="1935" x2="5006" y2="1935" stroke="#2F6BFF" stroke-width="12" stroke-linecap="round"/>
+<polygon points="5006,1935 4985.215390309173,1947.0 4985.215390309173,1923.0" fill="#2F6BFF"/>
+<rect x="5020" y="1735" width="980" height="390" rx="34" fill="#FBFCFE" stroke="#DCE5F1" stroke-width="2"/>
+<circle cx="5110" cy="1810" r="46" fill="#EAF1FF"/>
+<text x="5110" y="1827" class="bold" font-size="30" fill="#2F6BFF" text-anchor="middle">4</text>
+<text x="5075" y="1915" class="bold" font-size="39" fill="#172033" text-anchor="start">生成组合优化</text>
+<text x="5075" y="1985" class="reg" font-size="29" fill="#68758C" text-anchor="start">保持原图结构并综合精修</text>
+<line x1="6015" y1="1935" x2="6056" y2="1935" stroke="#2F6BFF" stroke-width="12" stroke-linecap="round"/>
+<polygon points="6056,1935 6035.215390309173,1947.0 6035.215390309173,1923.0" fill="#2F6BFF"/>
+<rect x="6070" y="1735" width="980" height="390" rx="34" fill="#FBFCFE" stroke="#DCE5F1" stroke-width="2"/>
+<circle cx="6160" cy="1810" r="46" fill="#EAF1FF"/>
+<text x="6160" y="1827" class="bold" font-size="30" fill="#2F6BFF" text-anchor="middle">5</text>
+<text x="6125" y="1915" class="bold" font-size="39" fill="#172033" text-anchor="start">结果对比下载</text>
+<text x="6125" y="1985" class="reg" font-size="29" fill="#68758C" text-anchor="start">查看问题、Prompt 与结果</text>
+<rect x="314" y="2368" width="7080" height="570" rx="50" fill="#25324C" opacity=".08"/>
+<rect x="300" y="2350" width="7080" height="570" rx="50" fill="#FFFFFF" stroke="#DCE5F1" stroke-width="3"/>
+<rect x="342" y="2392" width="1450" height="486" rx="38" fill="#EAF8F2"/>
+<rect x="385" y="2430" width="160" height="66" rx="33.0" fill="#FFFFFF"/>
+<text x="465.0" y="2475.54" class="bold" font-size="30" fill="#2DB77B" text-anchor="middle">02</text>
+<text x="385" y="2535" class="bold" font-size="54" fill="#172033" text-anchor="start">角色动作融合</text>
+<text x="385" y="2605" class="reg" font-size="34" fill="#68758C" text-anchor="start">用角色参考图与动作参考，强化或替换当前动作表现</text>
+<rect x="385" y="2685" width="42" height="42" rx="10" fill="#FFFFFF" stroke="#2DB77B" stroke-width="4"/>
+<line x1="395" y1="2707" x2="404" y2="2716" stroke="#2DB77B" stroke-width="5" stroke-linecap="round"/>
+<line x1="404" y1="2716" x2="419" y2="2697" stroke="#2DB77B" stroke-width="5" stroke-linecap="round"/>
+<text x="443" y="2719" class="reg" font-size="28" fill="#68758C" text-anchor="start">角色身份保持</text>
+<rect x="995" y="2685" width="42" height="42" rx="10" fill="#FFFFFF" stroke="#2DB77B" stroke-width="4"/>
+<line x1="1005" y1="2707" x2="1014" y2="2716" stroke="#2DB77B" stroke-width="5" stroke-linecap="round"/>
+<line x1="1014" y1="2716" x2="1029" y2="2697" stroke="#2DB77B" stroke-width="5" stroke-linecap="round"/>
+<text x="1053" y="2719" class="reg" font-size="28" fill="#68758C" text-anchor="start">角色配色与服装</text>
+<rect x="385" y="2753" width="42" height="42" rx="10" fill="#FFFFFF" stroke="#2DB77B" stroke-width="4"/>
+<line x1="395" y1="2775" x2="404" y2="2784" stroke="#2DB77B" stroke-width="5" stroke-linecap="round"/>
+<line x1="404" y1="2784" x2="419" y2="2765" stroke="#2DB77B" stroke-width="5" stroke-linecap="round"/>
+<text x="443" y="2787" class="reg" font-size="28" fill="#68758C" text-anchor="start">动作灵活度</text>
+<rect x="995" y="2753" width="42" height="42" rx="10" fill="#FFFFFF" stroke="#2DB77B" stroke-width="4"/>
+<line x1="1005" y1="2775" x2="1014" y2="2784" stroke="#2DB77B" stroke-width="5" stroke-linecap="round"/>
+<line x1="1014" y1="2784" x2="1029" y2="2765" stroke="#2DB77B" stroke-width="5" stroke-linecap="round"/>
+<text x="1053" y="2787" class="reg" font-size="28" fill="#68758C" text-anchor="start">身体动态</text>
+<rect x="385" y="2821" width="42" height="42" rx="10" fill="#FFFFFF" stroke="#2DB77B" stroke-width="4"/>
+<line x1="395" y1="2843" x2="404" y2="2852" stroke="#2DB77B" stroke-width="5" stroke-linecap="round"/>
+<line x1="404" y1="2852" x2="419" y2="2833" stroke="#2DB77B" stroke-width="5" stroke-linecap="round"/>
+<text x="443" y="2855" class="reg" font-size="28" fill="#68758C" text-anchor="start">镜头感</text>
+<rect x="995" y="2821" width="42" height="42" rx="10" fill="#FFFFFF" stroke="#2DB77B" stroke-width="4"/>
+<line x1="1005" y1="2843" x2="1014" y2="2852" stroke="#2DB77B" stroke-width="5" stroke-linecap="round"/>
+<line x1="1014" y1="2852" x2="1029" y2="2833" stroke="#2DB77B" stroke-width="5" stroke-linecap="round"/>
+<text x="1053" y="2855" class="reg" font-size="28" fill="#68758C" text-anchor="start">速度感</text>
+<rect x="1870" y="2430" width="980" height="390" rx="34" fill="#FBFCFE" stroke="#DCE5F1" stroke-width="2"/>
+<circle cx="1960" cy="2505" r="46" fill="#EAF8F2"/>
+<text x="1960" y="2522" class="bold" font-size="30" fill="#2DB77B" text-anchor="middle">1</text>
+<text x="1925" y="2610" class="bold" font-size="39" fill="#172033" text-anchor="start">上传原图</text>
+<text x="1925" y="2680" class="reg" font-size="29" fill="#68758C" text-anchor="start">选择待编辑画面</text>
+<line x1="2865" y1="2630" x2="2906" y2="2630" stroke="#2DB77B" stroke-width="12" stroke-linecap="round"/>
+<polygon points="2906,2630 2885.2153903091735,2642.0 2885.2153903091735,2618.0" fill="#2DB77B"/>
+<rect x="2920" y="2430" width="980" height="390" rx="34" fill="#FBFCFE" stroke="#DCE5F1" stroke-width="2"/>
+<circle cx="3010" cy="2505" r="46" fill="#EAF8F2"/>
+<text x="3010" y="2522" class="bold" font-size="30" fill="#2DB77B" text-anchor="middle">2</text>
+<text x="2975" y="2610" class="bold" font-size="39" fill="#172033" text-anchor="start">上传角色参考图</text>
+<text x="2975" y="2680" class="reg" font-size="29" fill="#68758C" text-anchor="start">可选动作参考图</text>
+<line x1="3915" y1="2630" x2="3956" y2="2630" stroke="#2DB77B" stroke-width="12" stroke-linecap="round"/>
+<polygon points="3956,2630 3935.2153903091735,2642.0 3935.2153903091735,2618.0" fill="#2DB77B"/>
+<rect x="3970" y="2430" width="980" height="390" rx="34" fill="#FBFCFE" stroke="#DCE5F1" stroke-width="2"/>
+<circle cx="4060" cy="2505" r="46" fill="#EAF8F2"/>
+<text x="4060" y="2522" class="bold" font-size="30" fill="#2DB77B" text-anchor="middle">3</text>
+<text x="4025" y="2610" class="bold" font-size="39" fill="#172033" text-anchor="start">选择动作预设</text>
+<text x="4025" y="2680" class="reg" font-size="29" fill="#68758C" text-anchor="start">冲刺 / 攻击 / 跃击 / 卡通…</text>
+<line x1="4965" y1="2630" x2="5006" y2="2630" stroke="#2DB77B" stroke-width="12" stroke-linecap="round"/>
+<polygon points="5006,2630 4985.215390309173,2642.0 4985.215390309173,2618.0" fill="#2DB77B"/>
+<rect x="5020" y="2430" width="980" height="390" rx="34" fill="#FBFCFE" stroke="#DCE5F1" stroke-width="2"/>
+<circle cx="5110" cy="2505" r="46" fill="#EAF8F2"/>
+<text x="5110" y="2522" class="bold" font-size="30" fill="#2DB77B" text-anchor="middle">4</text>
+<text x="5075" y="2610" class="bold" font-size="39" fill="#172033" text-anchor="start">调整融合参数</text>
+<text x="5075" y="2680" class="reg" font-size="29" fill="#68758C" text-anchor="start">方向 / 姿态 / 速度 / 镜头 / 动态</text>
+<line x1="6015" y1="2630" x2="6056" y2="2630" stroke="#2DB77B" stroke-width="12" stroke-linecap="round"/>
+<polygon points="6056,2630 6035.215390309173,2642.0 6035.215390309173,2618.0" fill="#2DB77B"/>
+<rect x="6070" y="2430" width="980" height="390" rx="34" fill="#FBFCFE" stroke="#DCE5F1" stroke-width="2"/>
+<circle cx="6160" cy="2505" r="46" fill="#EAF8F2"/>
+<text x="6160" y="2522" class="bold" font-size="30" fill="#2DB77B" text-anchor="middle">5</text>
+<text x="6125" y="2610" class="bold" font-size="39" fill="#172033" text-anchor="start">生成融合结果</text>
+<text x="6125" y="2680" class="reg" font-size="29" fill="#68758C" text-anchor="start">保持身份、服装、武器与比例</text>
+<rect x="314" y="3063" width="7080" height="570" rx="50" fill="#25324C" opacity=".08"/>
+<rect x="300" y="3045" width="7080" height="570" rx="50" fill="#FFFFFF" stroke="#DCE5F1" stroke-width="3"/>
+<rect x="342" y="3087" width="1450" height="486" rx="38" fill="#F0EDFF"/>
+<rect x="385" y="3125" width="160" height="66" rx="33.0" fill="#FFFFFF"/>
+<text x="465.0" y="3170.54" class="bold" font-size="30" fill="#7A61FF" text-anchor="middle">03</text>
+<text x="385" y="3230" class="bold" font-size="54" fill="#172033" text-anchor="start">参考图风格迁移</text>
+<text x="385" y="3300" class="reg" font-size="34" fill="#68758C" text-anchor="start">分析参考图视觉风格，并迁移到当前图片</text>
+<rect x="385" y="3380" width="42" height="42" rx="10" fill="#FFFFFF" stroke="#7A61FF" stroke-width="4"/>
+<line x1="395" y1="3402" x2="404" y2="3411" stroke="#7A61FF" stroke-width="5" stroke-linecap="round"/>
+<line x1="404" y1="3411" x2="419" y2="3392" stroke="#7A61FF" stroke-width="5" stroke-linecap="round"/>
+<text x="443" y="3414" class="reg" font-size="28" fill="#68758C" text-anchor="start">迁移光线</text>
+<rect x="995" y="3380" width="42" height="42" rx="10" fill="#FFFFFF" stroke="#7A61FF" stroke-width="4"/>
+<line x1="1005" y1="3402" x2="1014" y2="3411" stroke="#7A61FF" stroke-width="5" stroke-linecap="round"/>
+<line x1="1014" y1="3411" x2="1029" y2="3392" stroke="#7A61FF" stroke-width="5" stroke-linecap="round"/>
+<text x="1053" y="3414" class="reg" font-size="28" fill="#68758C" text-anchor="start">迁移色彩</text>
+<rect x="385" y="3448" width="42" height="42" rx="10" fill="#FFFFFF" stroke="#7A61FF" stroke-width="4"/>
+<line x1="395" y1="3470" x2="404" y2="3479" stroke="#7A61FF" stroke-width="5" stroke-linecap="round"/>
+<line x1="404" y1="3479" x2="419" y2="3460" stroke="#7A61FF" stroke-width="5" stroke-linecap="round"/>
+<text x="443" y="3482" class="reg" font-size="28" fill="#68758C" text-anchor="start">迁移材质</text>
+<rect x="995" y="3448" width="42" height="42" rx="10" fill="#FFFFFF" stroke="#7A61FF" stroke-width="4"/>
+<line x1="1005" y1="3470" x2="1014" y2="3479" stroke="#7A61FF" stroke-width="5" stroke-linecap="round"/>
+<line x1="1014" y1="3479" x2="1029" y2="3460" stroke="#7A61FF" stroke-width="5" stroke-linecap="round"/>
+<text x="1053" y="3482" class="reg" font-size="28" fill="#68758C" text-anchor="start">迁移氛围</text>
+<rect x="385" y="3516" width="42" height="42" rx="10" fill="#FFFFFF" stroke="#7A61FF" stroke-width="4"/>
+<line x1="395" y1="3538" x2="404" y2="3547" stroke="#7A61FF" stroke-width="5" stroke-linecap="round"/>
+<line x1="404" y1="3547" x2="419" y2="3528" stroke="#7A61FF" stroke-width="5" stroke-linecap="round"/>
+<text x="443" y="3550" class="reg" font-size="28" fill="#68758C" text-anchor="start">迁移镜头感</text>
+<rect x="995" y="3516" width="42" height="42" rx="10" fill="#FFFFFF" stroke="#7A61FF" stroke-width="4"/>
+<line x1="1005" y1="3538" x2="1014" y2="3547" stroke="#7A61FF" stroke-width="5" stroke-linecap="round"/>
+<line x1="1014" y1="3547" x2="1029" y2="3528" stroke="#7A61FF" stroke-width="5" stroke-linecap="round"/>
+<text x="1053" y="3550" class="reg" font-size="28" fill="#68758C" text-anchor="start">迁移动态效果</text>
+<rect x="1870" y="3125" width="980" height="390" rx="34" fill="#FBFCFE" stroke="#DCE5F1" stroke-width="2"/>
+<circle cx="1960" cy="3200" r="46" fill="#F0EDFF"/>
+<text x="1960" y="3217" class="bold" font-size="30" fill="#7A61FF" text-anchor="middle">1</text>
+<text x="1925" y="3305" class="bold" font-size="39" fill="#172033" text-anchor="start">上传当前图片</text>
+<text x="1925" y="3375" class="reg" font-size="29" fill="#68758C" text-anchor="start">选择待优化图</text>
+<line x1="2865" y1="3325" x2="2906" y2="3325" stroke="#7A61FF" stroke-width="12" stroke-linecap="round"/>
+<polygon points="2906,3325 2885.2153903091735,3337.0 2885.2153903091735,3313.0" fill="#7A61FF"/>
+<rect x="2920" y="3125" width="980" height="390" rx="34" fill="#FBFCFE" stroke="#DCE5F1" stroke-width="2"/>
+<circle cx="3010" cy="3200" r="46" fill="#F0EDFF"/>
+<text x="3010" y="3217" class="bold" font-size="30" fill="#7A61FF" text-anchor="middle">2</text>
+<text x="2975" y="3305" class="bold" font-size="39" fill="#172033" text-anchor="start">上传风格参考图</text>
+<text x="2975" y="3375" class="reg" font-size="29" fill="#68758C" text-anchor="start">AI 分析参考风格</text>
+<line x1="3915" y1="3325" x2="3956" y2="3325" stroke="#7A61FF" stroke-width="12" stroke-linecap="round"/>
+<polygon points="3956,3325 3935.2153903091735,3337.0 3935.2153903091735,3313.0" fill="#7A61FF"/>
+<rect x="3970" y="3125" width="980" height="390" rx="34" fill="#FBFCFE" stroke="#DCE5F1" stroke-width="2"/>
+<circle cx="4060" cy="3200" r="46" fill="#F0EDFF"/>
+<text x="4060" y="3217" class="bold" font-size="30" fill="#7A61FF" text-anchor="middle">3</text>
+<text x="4025" y="3305" class="bold" font-size="39" fill="#172033" text-anchor="start">设置迁移维度</text>
+<text x="4025" y="3375" class="reg" font-size="29" fill="#68758C" text-anchor="start">光线 / 色彩 / 材质 / 氛围</text>
+<line x1="4965" y1="3325" x2="5006" y2="3325" stroke="#7A61FF" stroke-width="12" stroke-linecap="round"/>
+<polygon points="5006,3325 4985.215390309173,3337.0 4985.215390309173,3313.0" fill="#7A61FF"/>
+<rect x="5020" y="3125" width="980" height="390" rx="34" fill="#FBFCFE" stroke="#DCE5F1" stroke-width="2"/>
+<circle cx="5110" cy="3200" r="46" fill="#F0EDFF"/>
+<text x="5110" y="3217" class="bold" font-size="30" fill="#7A61FF" text-anchor="middle">4</text>
+<text x="5075" y="3305" class="bold" font-size="39" fill="#172033" text-anchor="start">控制保持内容</text>
+<text x="5075" y="3375" class="reg" font-size="29" fill="#68758C" text-anchor="start">构图 / 角色 / 标题 / Logo</text>
+<line x1="6015" y1="3325" x2="6056" y2="3325" stroke="#7A61FF" stroke-width="12" stroke-linecap="round"/>
+<polygon points="6056,3325 6035.215390309173,3337.0 6035.215390309173,3313.0" fill="#7A61FF"/>
+<rect x="6070" y="3125" width="980" height="390" rx="34" fill="#FBFCFE" stroke="#DCE5F1" stroke-width="2"/>
+<circle cx="6160" cy="3200" r="46" fill="#F0EDFF"/>
+<text x="6160" y="3217" class="bold" font-size="30" fill="#7A61FF" text-anchor="middle">5</text>
+<text x="6125" y="3305" class="bold" font-size="39" fill="#172033" text-anchor="start">生成迁移结果</text>
+<text x="6125" y="3375" class="reg" font-size="29" fill="#68758C" text-anchor="start">对比查看并下载保存</text>
+<text x="300" y="3765" class="bold" font-size="78" fill="#172033" text-anchor="start">统一结果中心与记录管理</text>
+<rect x="314" y="3903" width="4950" height="300" rx="46" fill="#25324C" opacity=".08"/>
+<rect x="300" y="3885" width="4950" height="300" rx="46" fill="url(#resultGrad)" stroke="#DCE5F1" stroke-width="3"/>
+<text x="400" y="3975" class="bold" font-size="48" fill="#172033" text-anchor="start">结果展示与对比</text>
+<rect x="400" y="4025" width="700" height="110" rx="26" fill="#FFFFFF" stroke="#DCE5F1" stroke-width="2"/>
+<circle cx="448" cy="4080" r="22" fill="#2F6BFF"/>
+<text x="485" y="4065" class="bold" font-size="30" fill="#172033" text-anchor="start">原图 / 结果图</text>
+<text x="485" y="4105" class="reg" font-size="25" fill="#68758C" text-anchor="start">并排查看</text>
+<rect x="1134" y="4025" width="700" height="110" rx="26" fill="#FFFFFF" stroke="#DCE5F1" stroke-width="2"/>
+<circle cx="1182" cy="4080" r="22" fill="#24B8C6"/>
+<text x="1219" y="4065" class="bold" font-size="30" fill="#172033" text-anchor="start">滑动对比</text>
+<text x="1219" y="4105" class="reg" font-size="25" fill="#68758C" text-anchor="start">观察细节变化</text>
+<rect x="1868" y="4025" width="700" height="110" rx="26" fill="#FFFFFF" stroke="#DCE5F1" stroke-width="2"/>
+<circle cx="1916" cy="4080" r="22" fill="#7A61FF"/>
+<text x="1953" y="4065" class="bold" font-size="30" fill="#172033" text-anchor="start">缩略图预览</text>
+<text x="1953" y="4105" class="reg" font-size="25" fill="#68758C" text-anchor="start">快速切换结果</text>
+<rect x="2602" y="4025" width="700" height="110" rx="26" fill="#FFFFFF" stroke="#DCE5F1" stroke-width="2"/>
+<circle cx="2650" cy="4080" r="22" fill="#F49A45"/>
+<text x="2687" y="4065" class="bold" font-size="30" fill="#172033" text-anchor="start">放大查看</text>
+<text x="2687" y="4105" class="reg" font-size="25" fill="#68758C" text-anchor="start">检查局部细节</text>
+<rect x="3336" y="4025" width="700" height="110" rx="26" fill="#FFFFFF" stroke="#DCE5F1" stroke-width="2"/>
+<circle cx="3384" cy="4080" r="22" fill="#2DB77B"/>
+<text x="3421" y="4065" class="bold" font-size="30" fill="#172033" text-anchor="start">下载结果图</text>
+<text x="3421" y="4105" class="reg" font-size="25" fill="#68758C" text-anchor="start">保存正式文件</text>
+<rect x="4070" y="4025" width="760" height="110" rx="26" fill="#FFFFFF" stroke="#DCE5F1" stroke-width="2"/>
+<circle cx="4118" cy="4080" r="22" fill="#EF6272"/>
+<text x="4155" y="4065" class="bold" font-size="30" fill="#172033" text-anchor="start">查看 Prompt</text>
+<text x="4155" y="4105" class="reg" font-size="25" fill="#68758C" text-anchor="start">复盘执行逻辑</text>
+<rect x="5344" y="3903" width="2050" height="300" rx="46" fill="#25324C" opacity=".08"/>
+<rect x="5330" y="3885" width="2050" height="300" rx="46" fill="#FFFFFF" stroke="#DCE5F1" stroke-width="3"/>
+<rect x="5400" y="3930" width="360" height="72" rx="36.0" fill="#FFF8E4"/>
+<text x="5580.0" y="3979.68" class="bold" font-size="36" fill="#E9B93F" text-anchor="middle">历史记录</text>
+<text x="5795" y="3978" class="bold" font-size="38" fill="#172033" text-anchor="start">所有模块自动归档</text>
+<rect x="5400" y="4030" width="760" height="54" rx="27.0" fill="#EAF1FF"/>
+<text x="5780.0" y="4067.26" class="bold" font-size="27" fill="#2F6BFF" text-anchor="middle">诊断历史</text>
+<rect x="6230" y="4030" width="760" height="54" rx="27.0" fill="#EAF1FF"/>
+<text x="6610.0" y="4067.26" class="bold" font-size="27" fill="#2F6BFF" text-anchor="middle">组合优化历史</text>
+<rect x="5400" y="4100" width="760" height="54" rx="27.0" fill="#F0EDFF"/>
+<text x="5780.0" y="4137.26" class="bold" font-size="27" fill="#7A61FF" text-anchor="middle">动作融合历史</text>
+<rect x="6230" y="4100" width="760" height="54" rx="27.0" fill="#F0EDFF"/>
+<text x="6610.0" y="4137.26" class="bold" font-size="27" fill="#7A61FF" text-anchor="middle">风格迁移历史</text>
+<text x="5400" y="4160" class="reg" font-size="28" fill="#68758C" text-anchor="start">查看详情 · 下载结果 · 删除单条 · 清空历史</text>
+<rect x="300" y="4235" width="7080" height="60" rx="30" fill="#172033"/>
+<text x="420" y="4277" class="reg" font-size="28" fill="#FFFFFF" text-anchor="start">开发辅助：Repair Debug Panel 可查看 original / bbox / mask / inpaint / blend / final，正式使用时建议默认折叠</text>
+</svg>

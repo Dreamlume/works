@@ -1,0 +1,360 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="7680" height="4320" viewBox="0 0 7680 4320">
+<defs>
+  <linearGradient id="headerGrad" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#FDEDF2"/>
+    <stop offset=".45" stop-color="#F5F8FC"/>
+    <stop offset="1" stop-color="#EDF9F6"/>
+  </linearGradient>
+  <linearGradient id="resultGrad" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#EAF1FF"/>
+    <stop offset=".5" stop-color="#F0EDFF"/>
+    <stop offset="1" stop-color="#EAF8F2"/>
+  </linearGradient>
+  <style>
+    .reg { font-family:"Noto Sans CJK SC","Microsoft YaHei","PingFang SC",sans-serif; font-weight:400; }
+    .bold { font-family:"Noto Sans CJK SC","Microsoft YaHei","PingFang SC",sans-serif; font-weight:700; }
+  </style>
+</defs>
+<rect width="7680" height="4320" fill="#F5F8FC"/>
+<rect x="0" y="0" width="7680" height="790" fill="url(#headerGrad)"/>
+
+<line x1="0" y1="0" x2="0" y2="4320" stroke="#EEF2F8" stroke-width="2"/>
+<line x1="240" y1="0" x2="240" y2="4320" stroke="#EEF2F8" stroke-width="2"/>
+<line x1="480" y1="0" x2="480" y2="4320" stroke="#EEF2F8" stroke-width="2"/>
+<line x1="720" y1="0" x2="720" y2="4320" stroke="#EEF2F8" stroke-width="2"/>
+<line x1="960" y1="0" x2="960" y2="4320" stroke="#EEF2F8" stroke-width="2"/>
+<line x1="1200" y1="0" x2="1200" y2="4320" stroke="#EEF2F8" stroke-width="2"/>
+<line x1="1440" y1="0" x2="1440" y2="4320" stroke="#EEF2F8" stroke-width="2"/>
+<line x1="1680" y1="0" x2="1680" y2="4320" stroke="#EEF2F8" stroke-width="2"/>
+<line x1="1920" y1="0" x2="1920" y2="4320" stroke="#EEF2F8" stroke-width="2"/>
+<line x1="2160" y1="0" x2="2160" y2="4320" stroke="#EEF2F8" stroke-width="2"/>
+<line x1="2400" y1="0" x2="2400" y2="4320" stroke="#EEF2F8" stroke-width="2"/>
+<line x1="2640" y1="0" x2="2640" y2="4320" stroke="#EEF2F8" stroke-width="2"/>
+<line x1="2880" y1="0" x2="2880" y2="4320" stroke="#EEF2F8" stroke-width="2"/>
+<line x1="3120" y1="0" x2="3120" y2="4320" stroke="#EEF2F8" stroke-width="2"/>
+<line x1="3360" y1="0" x2="3360" y2="4320" stroke="#EEF2F8" stroke-width="2"/>
+<line x1="3600" y1="0" x2="3600" y2="4320" stroke="#EEF2F8" stroke-width="2"/>
+<line x1="3840" y1="0" x2="3840" y2="4320" stroke="#EEF2F8" stroke-width="2"/>
+<line x1="4080" y1="0" x2="4080" y2="4320" stroke="#EEF2F8" stroke-width="2"/>
+<line x1="4320" y1="0" x2="4320" y2="4320" stroke="#EEF2F8" stroke-width="2"/>
+<line x1="4560" y1="0" x2="4560" y2="4320" stroke="#EEF2F8" stroke-width="2"/>
+<line x1="4800" y1="0" x2="4800" y2="4320" stroke="#EEF2F8" stroke-width="2"/>
+<line x1="5040" y1="0" x2="5040" y2="4320" stroke="#EEF2F8" stroke-width="2"/>
+<line x1="5280" y1="0" x2="5280" y2="4320" stroke="#EEF2F8" stroke-width="2"/>
+<line x1="5520" y1="0" x2="5520" y2="4320" stroke="#EEF2F8" stroke-width="2"/>
+<line x1="5760" y1="0" x2="5760" y2="4320" stroke="#EEF2F8" stroke-width="2"/>
+<line x1="6000" y1="0" x2="6000" y2="4320" stroke="#EEF2F8" stroke-width="2"/>
+<line x1="6240" y1="0" x2="6240" y2="4320" stroke="#EEF2F8" stroke-width="2"/>
+<line x1="6480" y1="0" x2="6480" y2="4320" stroke="#EEF2F8" stroke-width="2"/>
+<line x1="6720" y1="0" x2="6720" y2="4320" stroke="#EEF2F8" stroke-width="2"/>
+<line x1="6960" y1="0" x2="6960" y2="4320" stroke="#EEF2F8" stroke-width="2"/>
+<line x1="7200" y1="0" x2="7200" y2="4320" stroke="#EEF2F8" stroke-width="2"/>
+<line x1="7440" y1="0" x2="7440" y2="4320" stroke="#EEF2F8" stroke-width="2"/>
+<line x1="0" y1="0" x2="7680" y2="0" stroke="#EEF2F8" stroke-width="2"/>
+<line x1="0" y1="240" x2="7680" y2="240" stroke="#EEF2F8" stroke-width="2"/>
+<line x1="0" y1="480" x2="7680" y2="480" stroke="#EEF2F8" stroke-width="2"/>
+<line x1="0" y1="720" x2="7680" y2="720" stroke="#EEF2F8" stroke-width="2"/>
+<line x1="0" y1="960" x2="7680" y2="960" stroke="#EEF2F8" stroke-width="2"/>
+<line x1="0" y1="1200" x2="7680" y2="1200" stroke="#EEF2F8" stroke-width="2"/>
+<line x1="0" y1="1440" x2="7680" y2="1440" stroke="#EEF2F8" stroke-width="2"/>
+<line x1="0" y1="1680" x2="7680" y2="1680" stroke="#EEF2F8" stroke-width="2"/>
+<line x1="0" y1="1920" x2="7680" y2="1920" stroke="#EEF2F8" stroke-width="2"/>
+<line x1="0" y1="2160" x2="7680" y2="2160" stroke="#EEF2F8" stroke-width="2"/>
+<line x1="0" y1="2400" x2="7680" y2="2400" stroke="#EEF2F8" stroke-width="2"/>
+<line x1="0" y1="2640" x2="7680" y2="2640" stroke="#EEF2F8" stroke-width="2"/>
+<line x1="0" y1="2880" x2="7680" y2="2880" stroke="#EEF2F8" stroke-width="2"/>
+<line x1="0" y1="3120" x2="7680" y2="3120" stroke="#EEF2F8" stroke-width="2"/>
+<line x1="0" y1="3360" x2="7680" y2="3360" stroke="#EEF2F8" stroke-width="2"/>
+<line x1="0" y1="3600" x2="7680" y2="3600" stroke="#EEF2F8" stroke-width="2"/>
+<line x1="0" y1="3840" x2="7680" y2="3840" stroke="#EEF2F8" stroke-width="2"/>
+<line x1="0" y1="4080" x2="7680" y2="4080" stroke="#EEF2F8" stroke-width="2"/>
+<rect x="300" y="205" width="580" height="106" rx="53.0" fill="#FDEBF0"/>
+<text x="590.0" y="278.14" class="bold" font-size="44" fill="#F05B78" text-anchor="middle">新图工坊 · 功能总览</text>
+<text x="300" y="525" class="bold" font-size="178" fill="#182133" text-anchor="start">多角色参考迁移与游戏买量图生成器</text>
+<text x="305" y="685" class="reg" font-size="62" fill="#68758C" text-anchor="start">上传角色原画、伙伴素材和视觉参考图，自动生成 4 张不同方向的宣传图与美宣图</text>
+<rect x="6084" y="268" width="1310" height="420" rx="56" fill="#25324C" opacity=".08"/>
+<rect x="6070" y="250" width="1310" height="420" rx="56" fill="#FFFFFF" stroke="#DCE5F1" stroke-width="3"/>
+<circle cx="6275" cy="450" r="108" fill="#FDEBF0"/>
+<path d="M 6233.0 477.0 C 6257.0 402.0, 6293.0 402.0, 6320.0 459.0 C 6300.5 495.0, 6267.5 501.0, 6233.0 477.0 Z" fill="#F05B78"/>
+<circle cx="6270.5" cy="435.0" r="8.25" fill="#FFFFFF"/>
+<circle cx="6291.5" cy="447.0" r="8.25" fill="#FFFFFF"/>
+<circle cx="6260.0" cy="459.0" r="8.25" fill="#FFFFFF"/>
+<text x="6460" y="398" class="bold" font-size="64" fill="#182133" text-anchor="start">一键生成 4 张独立图片</text>
+<text x="6460" y="505" class="bold" font-size="45" fill="#F05B78" text-anchor="start">不同文案 · 不同排版 · 不同色调</text>
+<text x="6460" y="590" class="reg" font-size="38" fill="#68758C" text-anchor="start">支持参考图高还原、自由延展与继续扩展</text>
+<text x="300" y="900" class="bold" font-size="78" fill="#182133" text-anchor="start">统一生成流程</text>
+<line x1="300" y1="945" x2="7380" y2="945" stroke="#DCE5F1" stroke-width="4" stroke-linecap="round"/>
+<rect x="314" y="1043" width="950" height="365" rx="42" fill="#25324C" opacity=".08"/>
+<rect x="300" y="1025" width="950" height="365" rx="42" fill="#FFFFFF" stroke="#DCE5F1" stroke-width="3"/>
+<circle cx="420" cy="1143" r="76" fill="#FDEBF0"/>
+<rect x="385.44" y="1117.08" width="69.12" height="49.68" rx="6.4799999999999995" fill="none" stroke="#F05B78" stroke-width="7.5600000000000005"/>
+<rect x="398.4" y="1106.28" width="25.919999999999998" height="12.959999999999999" rx="4.32" fill="#F05B78"/>
+<rect x="1040" y="1069" width="140" height="66" rx="33.0" fill="#FDEBF0"/>
+<text x="1110.0" y="1114.54" class="bold" font-size="29" fill="#F05B78" text-anchor="middle">01</text>
+<text x="360" y="1270" class="bold" font-size="46" fill="#182133" text-anchor="start">选择项目与模式</text>
+<text x="360" y="1340" class="reg" font-size="31" fill="#68758C" text-anchor="start">项目分类 / 游戏类型</text>
+<line x1="1260" y1="1207.5" x2="1302" y2="1207.5" stroke="#6A90FF" stroke-width="13" stroke-linecap="round"/>
+<polygon points="1302,1207.5 1279.4833395016046,1220.5 1279.4833395016046,1194.5" fill="#6A90FF"/>
+<rect x="1330" y="1043" width="950" height="365" rx="42" fill="#25324C" opacity=".08"/>
+<rect x="1316" y="1025" width="950" height="365" rx="42" fill="#FFFFFF" stroke="#DCE5F1" stroke-width="3"/>
+<circle cx="1436" cy="1143" r="76" fill="#EAF1FF"/>
+<circle cx="1436" cy="1125.72" r="16.2" fill="#2F6BFF"/>
+<path d="M 1405.76 1173.24 Q 1436 1148.4 1466.24 1173.24 Z" fill="#2F6BFF"/>
+<rect x="2056" y="1069" width="140" height="66" rx="33.0" fill="#EAF1FF"/>
+<text x="2126.0" y="1114.54" class="bold" font-size="29" fill="#2F6BFF" text-anchor="middle">02</text>
+<text x="1376" y="1270" class="bold" font-size="46" fill="#182133" text-anchor="start">上传角色原画</text>
+<text x="1376" y="1340" class="reg" font-size="31" fill="#68758C" text-anchor="start">主角色 / 宠物 / 伙伴</text>
+<line x1="2276" y1="1207.5" x2="2318" y2="1207.5" stroke="#6A90FF" stroke-width="13" stroke-linecap="round"/>
+<polygon points="2318,1207.5 2295.4833395016044,1220.5 2295.4833395016044,1194.5" fill="#6A90FF"/>
+<rect x="2346" y="1043" width="950" height="365" rx="42" fill="#25324C" opacity=".08"/>
+<rect x="2332" y="1025" width="950" height="365" rx="42" fill="#FFFFFF" stroke="#DCE5F1" stroke-width="3"/>
+<circle cx="2452" cy="1143" r="76" fill="#F0EDFF"/>
+<rect x="2417.44" y="1113.84" width="69.12" height="58.32000000000001" rx="6.4799999999999995" fill="none" stroke="#7A61FF" stroke-width="7.5600000000000005"/>
+<circle cx="2467.12" cy="1130.04" r="6.4799999999999995" fill="#7A61FF"/>
+<polygon points="2425.0,1162.44 2449.84,1136.52 2462.8,1148.4 2480.08,1140.84 2480.08,1162.44" fill="#7A61FF"/>
+<rect x="3072" y="1069" width="140" height="66" rx="33.0" fill="#F0EDFF"/>
+<text x="3142.0" y="1114.54" class="bold" font-size="29" fill="#7A61FF" text-anchor="middle">03</text>
+<text x="2392" y="1270" class="bold" font-size="46" fill="#182133" text-anchor="start">上传视觉参考图</text>
+<text x="2392" y="1340" class="reg" font-size="31" fill="#68758C" text-anchor="start">构图 / 色彩 / 光影 / 排版</text>
+<line x1="3292" y1="1207.5" x2="3334" y2="1207.5" stroke="#6A90FF" stroke-width="13" stroke-linecap="round"/>
+<polygon points="3334,1207.5 3311.4833395016044,1220.5 3311.4833395016044,1194.5" fill="#6A90FF"/>
+<rect x="3362" y="1043" width="950" height="365" rx="42" fill="#25324C" opacity=".08"/>
+<rect x="3348" y="1025" width="950" height="365" rx="42" fill="#FFFFFF" stroke="#DCE5F1" stroke-width="3"/>
+<circle cx="3468" cy="1143" r="76" fill="#E9FAFB"/>
+<line x1="3437.76" y1="1123.56" x2="3498.24" y2="1123.56" stroke="#24B8C6" stroke-width="7.5600000000000005" stroke-linecap="round"/>
+<line x1="3437.76" y1="1143" x2="3487.44" y2="1143" stroke="#24B8C6" stroke-width="7.5600000000000005" stroke-linecap="round"/>
+<line x1="3437.76" y1="1162.44" x2="3474.48" y2="1162.44" stroke="#24B8C6" stroke-width="7.5600000000000005" stroke-linecap="round"/>
+<rect x="4088" y="1069" width="140" height="66" rx="33.0" fill="#E9FAFB"/>
+<text x="4158.0" y="1114.54" class="bold" font-size="29" fill="#24B8C6" text-anchor="middle">04</text>
+<text x="3408" y="1270" class="bold" font-size="46" fill="#182133" text-anchor="start">输入文字描述</text>
+<text x="3408" y="1340" class="reg" font-size="31" fill="#68758C" text-anchor="start">关系 / 场景 / 动作 / 限制</text>
+<line x1="4308" y1="1207.5" x2="4350" y2="1207.5" stroke="#6A90FF" stroke-width="13" stroke-linecap="round"/>
+<polygon points="4350,1207.5 4327.483339501605,1220.5 4327.483339501605,1194.5" fill="#6A90FF"/>
+<rect x="4378" y="1043" width="950" height="365" rx="42" fill="#25324C" opacity=".08"/>
+<rect x="4364" y="1025" width="950" height="365" rx="42" fill="#FFFFFF" stroke="#DCE5F1" stroke-width="3"/>
+<circle cx="4484" cy="1143" r="76" fill="#FFF3E7"/>
+<line x1="4453.76" y1="1121.4" x2="4514.24" y2="1121.4" stroke="#F49A45" stroke-width="6.4799999999999995" stroke-linecap="round"/>
+<circle cx="4478.6" cy="1121.4" r="7.5600000000000005" fill="#F49A45"/>
+<line x1="4453.76" y1="1143" x2="4514.24" y2="1143" stroke="#F49A45" stroke-width="6.4799999999999995" stroke-linecap="round"/>
+<circle cx="4501.28" cy="1143" r="7.5600000000000005" fill="#F49A45"/>
+<line x1="4453.76" y1="1164.6" x2="4514.24" y2="1164.6" stroke="#F49A45" stroke-width="6.4799999999999995" stroke-linecap="round"/>
+<circle cx="4471.04" cy="1164.6" r="7.5600000000000005" fill="#F49A45"/>
+<rect x="5104" y="1069" width="140" height="66" rx="33.0" fill="#FFF3E7"/>
+<text x="5174.0" y="1114.54" class="bold" font-size="29" fill="#F49A45" text-anchor="middle">05</text>
+<text x="4424" y="1270" class="bold" font-size="46" fill="#182133" text-anchor="start">设置生成策略</text>
+<text x="4424" y="1340" class="reg" font-size="31" fill="#68758C" text-anchor="start">文案 / 版式 / 色调 / Logo</text>
+<line x1="5324" y1="1207.5" x2="5366" y2="1207.5" stroke="#6A90FF" stroke-width="13" stroke-linecap="round"/>
+<polygon points="5366,1207.5 5343.483339501605,1220.5 5343.483339501605,1194.5" fill="#6A90FF"/>
+<rect x="5394" y="1043" width="950" height="365" rx="42" fill="#25324C" opacity=".08"/>
+<rect x="5380" y="1025" width="950" height="365" rx="42" fill="#FFFFFF" stroke="#DCE5F1" stroke-width="3"/>
+<circle cx="5500" cy="1143" r="76" fill="#EAF8F2"/>
+<path d="M 5469.76 1162.44 C 5487.04 1108.44, 5512.96 1108.44, 5532.4 1149.48 C 5518.36 1175.4, 5494.6 1179.72, 5469.76 1162.44 Z" fill="#2DB77B"/>
+<circle cx="5496.76" cy="1132.2" r="5.94" fill="#FFFFFF"/>
+<circle cx="5511.88" cy="1140.84" r="5.94" fill="#FFFFFF"/>
+<circle cx="5489.2" cy="1149.48" r="5.94" fill="#FFFFFF"/>
+<rect x="6120" y="1069" width="140" height="66" rx="33.0" fill="#EAF8F2"/>
+<text x="6190.0" y="1114.54" class="bold" font-size="29" fill="#2DB77B" text-anchor="middle">06</text>
+<text x="5440" y="1270" class="bold" font-size="46" fill="#182133" text-anchor="start">生成 4 个方向</text>
+<text x="5440" y="1340" class="reg" font-size="31" fill="#68758C" text-anchor="start">独立排队 / 独立结果</text>
+<line x1="6340" y1="1207.5" x2="6382" y2="1207.5" stroke="#6A90FF" stroke-width="13" stroke-linecap="round"/>
+<polygon points="6382,1207.5 6359.483339501605,1220.5 6359.483339501605,1194.5" fill="#6A90FF"/>
+<rect x="6410" y="1043" width="950" height="365" rx="42" fill="#25324C" opacity=".08"/>
+<rect x="6396" y="1025" width="950" height="365" rx="42" fill="#FFFFFF" stroke="#DCE5F1" stroke-width="3"/>
+<circle cx="6516" cy="1143" r="76" fill="#EAF1FF"/>
+<circle cx="6516" cy="1143" r="33.48" fill="none" stroke="#2F6BFF" stroke-width="8.1"/>
+<line x1="6516" y1="1143" x2="6516" y2="1125.72" stroke="#2F6BFF" stroke-width="7.5600000000000005" stroke-linecap="round"/>
+<line x1="6516" y1="1143" x2="6533.28" y2="1151.64" stroke="#2F6BFF" stroke-width="7.5600000000000005" stroke-linecap="round"/>
+<polygon points="6479.28,1139.76 6503.04,1132.2 6492.24,1155.96" fill="#2F6BFF"/>
+<rect x="7136" y="1069" width="140" height="66" rx="33.0" fill="#EAF1FF"/>
+<text x="7206.0" y="1114.54" class="bold" font-size="29" fill="#2F6BFF" text-anchor="middle">07</text>
+<text x="6456" y="1270" class="bold" font-size="46" fill="#182133" text-anchor="start">下载与继续扩展</text>
+<text x="6456" y="1340" class="reg" font-size="31" fill="#68758C" text-anchor="start">重生成 / 换方向 / 历史</text>
+<text x="300" y="1525" class="bold" font-size="78" fill="#182133" text-anchor="start">网页三大工作区</text>
+<text x="1010" y="1525" class="reg" font-size="44" fill="#68758C" text-anchor="start">素材输入与控制 · AI 四方向策划生成 · 结果迭代与任务管理</text>
+<rect x="314" y="1673" width="2270" height="1270" rx="54" fill="#25324C" opacity=".08"/>
+<rect x="300" y="1655" width="2270" height="1270" rx="54" fill="#FFFFFF" stroke="#DCE5F1" stroke-width="3"/>
+<rect x="370" y="1725" width="430" height="84" rx="42.0" fill="#EAF1FF"/>
+<text x="585.0" y="1782.96" class="bold" font-size="40" fill="#2F6BFF" text-anchor="middle">素材输入与控制</text>
+<text x="370" y="1885" class="reg" font-size="39" fill="#68758C" text-anchor="start">让系统准确理解“谁是主角、要生成什么”</text>
+<rect x="370" y="1980" width="2130" height="155" rx="30" fill="#FBFCFE" stroke="#DCE5F1" stroke-width="2"/>
+<circle cx="430" cy="2057" r="48" fill="#FDEBF0"/>
+<rect x="407.6" y="2040.2" width="44.800000000000004" height="32.2" rx="4.2" fill="none" stroke="#F05B78" stroke-width="4.9"/>
+<rect x="416.0" y="2033.2" width="16.8" height="8.4" rx="2.8000000000000003" fill="#F05B78"/>
+<text x="510" y="2042" class="bold" font-size="40" fill="#182133" text-anchor="start">项目 / 模式</text>
+<text x="510" y="2092" class="reg" font-size="29" fill="#68758C" text-anchor="start">选择游戏项目或通用生成模式</text>
+<rect x="370" y="2155" width="2130" height="155" rx="30" fill="#FBFCFE" stroke="#DCE5F1" stroke-width="2"/>
+<circle cx="430" cy="2232" r="48" fill="#EAF1FF"/>
+<circle cx="430" cy="2220.8" r="10.5" fill="#2F6BFF"/>
+<path d="M 410.4 2251.6 Q 430 2235.5 449.6 2251.6 Z" fill="#2F6BFF"/>
+<text x="510" y="2217" class="bold" font-size="40" fill="#182133" text-anchor="start">角色原画</text>
+<text x="510" y="2267" class="reg" font-size="29" fill="#68758C" text-anchor="start">上传主角色、宠物、伙伴与综合参考</text>
+<rect x="370" y="2330" width="2130" height="155" rx="30" fill="#FBFCFE" stroke="#DCE5F1" stroke-width="2"/>
+<circle cx="430" cy="2407" r="48" fill="#F0EDFF"/>
+<rect x="407.6" y="2388.1" width="44.800000000000004" height="37.800000000000004" rx="4.2" fill="none" stroke="#7A61FF" stroke-width="4.9"/>
+<circle cx="439.8" cy="2398.6" r="4.2" fill="#7A61FF"/>
+<polygon points="412.5,2419.6 428.6,2402.8 437.0,2410.5 448.2,2405.6 448.2,2419.6" fill="#7A61FF"/>
+<text x="510" y="2392" class="bold" font-size="40" fill="#182133" text-anchor="start">视觉参考图</text>
+<text x="510" y="2442" class="reg" font-size="29" fill="#68758C" text-anchor="start">参考构图、光影、色彩、站位与节奏</text>
+<rect x="370" y="2505" width="2130" height="155" rx="30" fill="#FBFCFE" stroke="#DCE5F1" stroke-width="2"/>
+<circle cx="430" cy="2582" r="48" fill="#E9FAFB"/>
+<line x1="410.4" y1="2569.4" x2="449.6" y2="2569.4" stroke="#24B8C6" stroke-width="4.9" stroke-linecap="round"/>
+<line x1="410.4" y1="2582" x2="442.6" y2="2582" stroke="#24B8C6" stroke-width="4.9" stroke-linecap="round"/>
+<line x1="410.4" y1="2594.6" x2="434.2" y2="2594.6" stroke="#24B8C6" stroke-width="4.9" stroke-linecap="round"/>
+<text x="510" y="2567" class="bold" font-size="40" fill="#182133" text-anchor="start">文字描述</text>
+<text x="510" y="2617" class="reg" font-size="29" fill="#68758C" text-anchor="start">统一输入角色关系、场景、动作与限制</text>
+<rect x="370" y="2680" width="2130" height="155" rx="30" fill="#FBFCFE" stroke="#DCE5F1" stroke-width="2"/>
+<circle cx="430" cy="2757" r="48" fill="#FFF3E7"/>
+<line x1="410.4" y1="2743.0" x2="449.6" y2="2743.0" stroke="#F49A45" stroke-width="4.2" stroke-linecap="round"/>
+<circle cx="426.5" cy="2743.0" r="4.9" fill="#F49A45"/>
+<line x1="410.4" y1="2757" x2="449.6" y2="2757" stroke="#F49A45" stroke-width="4.2" stroke-linecap="round"/>
+<circle cx="441.2" cy="2757" r="4.9" fill="#F49A45"/>
+<line x1="410.4" y1="2771.0" x2="449.6" y2="2771.0" stroke="#F49A45" stroke-width="4.2" stroke-linecap="round"/>
+<circle cx="421.6" cy="2771.0" r="4.9" fill="#F49A45"/>
+<text x="510" y="2742" class="bold" font-size="40" fill="#182133" text-anchor="start">输出设置</text>
+<text x="510" y="2792" class="reg" font-size="29" fill="#68758C" text-anchor="start">数量、比例、尺寸、质量、密度与命名</text>
+<rect x="2664" y="1673" width="3020" height="1270" rx="54" fill="#25324C" opacity=".08"/>
+<rect x="2650" y="1655" width="3020" height="1270" rx="54" fill="#FFFFFF" stroke="#DCE5F1" stroke-width="3"/>
+<rect x="2720" y="1725" width="520" height="84" rx="42.0" fill="#EAF8F2"/>
+<text x="2980.0" y="1782.96" class="bold" font-size="40" fill="#2DB77B" text-anchor="middle">AI 四方向策划与生成</text>
+<text x="3275" y="1781" class="reg" font-size="37" fill="#68758C" text-anchor="start">每张图有独立方向、文案、排版与生成逻辑</text>
+<rect x="2720.0" y="1865" width="1415.0" height="360" rx="34" fill="#FFF3E7"/>
+<rect x="2744.0" y="1889" width="110" height="56" rx="28.0" fill="#182133"/>
+<text x="2799.0" y="1927.64" class="bold" font-size="25" fill="#FFFFFF" text-anchor="middle">01</text>
+<circle cx="3710.5" cy="2015" r="92" fill="#F49A45"/>
+<circle cx="3512.4" cy="2075" r="58" fill="#FFFFFF"/>
+<polygon points="2760.0,2190 3427.5,1975 4100.0,2190" fill="#FFFFFF" opacity=".55"/>
+<text x="2758.0" y="2170" class="bold" font-size="34" fill="#182133" text-anchor="start">买量福利 / 自动策划</text>
+<rect x="4185.0" y="1865" width="1415.0" height="360" rx="34" fill="#EAF1FF"/>
+<rect x="4209.0" y="1889" width="110" height="56" rx="28.0" fill="#182133"/>
+<text x="4264.0" y="1927.64" class="bold" font-size="25" fill="#FFFFFF" text-anchor="middle">02</text>
+<circle cx="5175.5" cy="2015" r="92" fill="#2F6BFF"/>
+<circle cx="4977.4" cy="2075" r="58" fill="#FFFFFF"/>
+<polygon points="4225.0,2190 4892.5,1975 5565.0,2190" fill="#FFFFFF" opacity=".55"/>
+<text x="4223.0" y="2170" class="bold" font-size="34" fill="#182133" text-anchor="start">参考图最高还原</text>
+<rect x="2720.0" y="2265" width="1415.0" height="360" rx="34" fill="#F0EDFF"/>
+<rect x="2744.0" y="2289" width="110" height="56" rx="28.0" fill="#182133"/>
+<text x="2799.0" y="2327.64" class="bold" font-size="25" fill="#FFFFFF" text-anchor="middle">03</text>
+<circle cx="3710.5" cy="2415" r="92" fill="#7A61FF"/>
+<circle cx="3512.4" cy="2475" r="58" fill="#FFFFFF"/>
+<polygon points="2760.0,2590 3427.5,2375 4100.0,2590" fill="#FFFFFF" opacity=".55"/>
+<text x="2758.0" y="2570" class="bold" font-size="34" fill="#182133" text-anchor="start">风格或场景延展</text>
+<rect x="4185.0" y="2265" width="1415.0" height="360" rx="34" fill="#EAF8F2"/>
+<rect x="4209.0" y="2289" width="110" height="56" rx="28.0" fill="#182133"/>
+<text x="4264.0" y="2327.64" class="bold" font-size="25" fill="#FFFFFF" text-anchor="middle">04</text>
+<circle cx="5175.5" cy="2415" r="92" fill="#2DB77B"/>
+<circle cx="4977.4" cy="2475" r="58" fill="#FFFFFF"/>
+<polygon points="4225.0,2590 4892.5,2375 5565.0,2590" fill="#FFFFFF" opacity=".55"/>
+<text x="4223.0" y="2570" class="bold" font-size="34" fill="#182133" text-anchor="start">气质启发 / 自由延展</text>
+<text x="2725" y="2670" class="bold" font-size="40" fill="#182133" text-anchor="start">生成队列状态</text>
+<rect x="3070" y="2627" width="240" height="66" rx="33.0" fill="#FFF8E4"/>
+<text x="3190.0" y="2672.54" class="bold" font-size="28" fill="#E9B93F" text-anchor="middle">等待生成</text>
+<rect x="3330" y="2627" width="240" height="66" rx="33.0" fill="#EAF1FF"/>
+<text x="3450.0" y="2672.54" class="bold" font-size="28" fill="#2F6BFF" text-anchor="middle">生成中</text>
+<rect x="3590" y="2627" width="240" height="66" rx="33.0" fill="#EAF8F2"/>
+<text x="3710.0" y="2672.54" class="bold" font-size="28" fill="#2DB77B" text-anchor="middle">已完成</text>
+<rect x="3850" y="2627" width="240" height="66" rx="33.0" fill="#FDECEF"/>
+<text x="3970.0" y="2672.54" class="bold" font-size="28" fill="#EF6272" text-anchor="middle">失败重试</text>
+<text x="2725" y="2775" class="reg" font-size="34" fill="#68758C" text-anchor="start">第 1 张完成后即可查看，不需要等待 4 张全部结束</text>
+<text x="2725" y="2835" class="reg" font-size="34" fill="#68758C" text-anchor="start">顶部支持：清除当前任务 · 下载全部 · 重新生成全部</text>
+<rect x="5764" y="1673" width="1630" height="1270" rx="54" fill="#25324C" opacity=".08"/>
+<rect x="5750" y="1655" width="1630" height="1270" rx="54" fill="#FFFFFF" stroke="#DCE5F1" stroke-width="3"/>
+<rect x="5810" y="1725" width="430" height="84" rx="42.0" fill="#FFF3E7"/>
+<text x="6025.0" y="1782.96" class="bold" font-size="40" fill="#F49A45" text-anchor="middle">生成策略控制</text>
+<text x="5810" y="1880" class="reg" font-size="38" fill="#68758C" text-anchor="start">控制 4 张图真正形成差异</text>
+<rect x="5810" y="1965" width="1510" height="175" rx="30" fill="#FBFCFE" stroke="#DCE5F1" stroke-width="2"/>
+<circle cx="5875" cy="2053" r="48" fill="#FDEBF0"/>
+<rect x="5853.4" y="2034.28" width="33.120000000000005" height="37.44" rx="4.32" fill="none" stroke="#F05B78" stroke-width="5.040000000000001"/>
+<rect x="5869.24" y="2044.36" width="27.36" height="28.8" rx="4.32" fill="none" stroke="#F05B78" stroke-width="5.040000000000001"/>
+<text x="5955" y="2037" class="bold" font-size="38" fill="#182133" text-anchor="start">文案控制</text>
+<text x="5955" y="2087" class="reg" font-size="27" fill="#68758C" text-anchor="start">自动 / 指定 / 无文案</text>
+<rect x="5810" y="2160" width="1510" height="175" rx="30" fill="#FBFCFE" stroke="#DCE5F1" stroke-width="2"/>
+<circle cx="5875" cy="2248" r="48" fill="#EAF1FF"/>
+<rect x="5851.96" y="2227.84" width="46.08" height="40.32000000000001" rx="4.32" fill="none" stroke="#2F6BFF" stroke-width="5.040000000000001"/>
+<line x1="5875" y1="2227.84" x2="5875" y2="2268.16" stroke="#2F6BFF" stroke-width="4.32" stroke-linecap="round"/>
+<line x1="5851.96" y1="2248" x2="5898.04" y2="2248" stroke="#2F6BFF" stroke-width="4.32" stroke-linecap="round"/>
+<text x="5955" y="2232" class="bold" font-size="38" fill="#182133" text-anchor="start">排版风格</text>
+<text x="5955" y="2282" class="reg" font-size="27" fill="#68758C" text-anchor="start">强标题 / 主视觉 / 斜切 / 对称…</text>
+<rect x="5810" y="2355" width="1510" height="175" rx="30" fill="#FBFCFE" stroke="#DCE5F1" stroke-width="2"/>
+<circle cx="5875" cy="2443" r="48" fill="#F0EDFF"/>
+<path d="M 5853.4 2455.96 C 5867.8 2418.52, 5890.84 2418.52, 5897.32 2441.56 C 5900.92 2453.08, 5889.4 2463.88, 5878.6 2455.96 C 5869.24 2450.2, 5865.64 2468.2, 5853.4 2455.96 Z" fill="#7A61FF"/>
+<circle cx="5867.8" cy="2435.8" r="3.2399999999999998" fill="#FFFFFF"/>
+<circle cx="5880.76" cy="2433.64" r="3.2399999999999998" fill="#FFFFFF"/>
+<circle cx="5887.96" cy="2443.72" r="3.2399999999999998" fill="#FFFFFF"/>
+<circle cx="5862.04" cy="2445.16" r="3.2399999999999998" fill="#FFFFFF"/>
+<text x="5955" y="2427" class="bold" font-size="38" fill="#182133" text-anchor="start">色调策略</text>
+<text x="5955" y="2477" class="reg" font-size="27" fill="#68758C" text-anchor="start">暖色 / 冷暖 / 暗场 / 金橙 / 青绿…</text>
+<rect x="5810" y="2550" width="1510" height="175" rx="30" fill="#FBFCFE" stroke="#DCE5F1" stroke-width="2"/>
+<circle cx="5875" cy="2638" r="48" fill="#EAF8F2"/>
+<rect x="5850.52" y="2623.6" width="48.96" height="28.8" rx="3.6" fill="none" stroke="#2DB77B" stroke-width="5.040000000000001"/>
+<text x="5875" y="2643.76" class="bold" font-size="12.959999999999999" fill="#2DB77B" text-anchor="middle">LOGO</text>
+<text x="5955" y="2622" class="bold" font-size="38" fill="#182133" text-anchor="start">Logo 设置</text>
+<text x="5955" y="2672" class="reg" font-size="27" fill="#68758C" text-anchor="start">智能放置 / 固定四角 / 不放 Logo</text>
+<rect x="5810" y="2750" width="1510" height="105" rx="28" fill="#FDEBF0"/>
+<text x="5850" y="2795" class="bold" font-size="31" fill="#F05B78" text-anchor="start">关键规则</text>
+<text x="5850" y="2840" class="bold" font-size="31" fill="#182133" text-anchor="start">“不要文案” ≠ “不要 Logo”</text>
+<text x="300" y="3075" class="bold" font-size="78" fill="#182133" text-anchor="start">默认四个生成方向</text>
+<text x="1030" y="3075" class="reg" font-size="44" fill="#68758C" text-anchor="start">在角色统一的前提下，让构图、文案、场景与氛围产生明显差异</text>
+<rect x="314.0" y="3213" width="1729.5" height="690" rx="44" fill="#25324C" opacity=".08"/>
+<rect x="300.0" y="3195" width="1729.5" height="690" rx="44" fill="#FFFFFF" stroke="#DCE5F1" stroke-width="3"/>
+<circle cx="1164.75" cy="3340" r="92" fill="#FFF3E7"/>
+<text x="1164.75" y="3367" class="bold" font-size="78" fill="#F49A45" text-anchor="middle">01</text>
+<rect x="365.0" y="3480" width="155" height="64" rx="32.0" fill="#FFF3E7"/>
+<text x="442.5" y="3524.16" class="bold" font-size="29" fill="#F49A45" text-anchor="middle">01</text>
+<text x="365.0" y="3635" class="bold" font-size="48" fill="#182133" text-anchor="start">自动策划 / 买量方向</text>
+<text x="365.0" y="3720" class="reg" font-size="34" fill="#68758C" text-anchor="start">根据角色气质和项目类型</text>
+<text x="365.0" y="3780" class="reg" font-size="34" fill="#68758C" text-anchor="start">自动规划高吸引力宣传画面</text>
+<rect x="2097.5" y="3213" width="1729.5" height="690" rx="44" fill="#25324C" opacity=".08"/>
+<rect x="2083.5" y="3195" width="1729.5" height="690" rx="44" fill="#FFFFFF" stroke="#DCE5F1" stroke-width="3"/>
+<circle cx="2948.25" cy="3340" r="92" fill="#EAF1FF"/>
+<text x="2948.25" y="3367" class="bold" font-size="78" fill="#2F6BFF" text-anchor="middle">02</text>
+<rect x="2148.5" y="3480" width="155" height="64" rx="32.0" fill="#EAF1FF"/>
+<text x="2226.0" y="3524.16" class="bold" font-size="29" fill="#2F6BFF" text-anchor="middle">02</text>
+<text x="2148.5" y="3635" class="bold" font-size="48" fill="#182133" text-anchor="start">参考图最高还原</text>
+<text x="2148.5" y="3720" class="reg" font-size="34" fill="#68758C" text-anchor="start">重点复刻参考图构图、站位</text>
+<text x="2148.5" y="3780" class="reg" font-size="34" fill="#68758C" text-anchor="start">再直接替换为上传角色</text>
+<rect x="3881.0" y="3213" width="1729.5" height="690" rx="44" fill="#25324C" opacity=".08"/>
+<rect x="3867.0" y="3195" width="1729.5" height="690" rx="44" fill="#FFFFFF" stroke="#DCE5F1" stroke-width="3"/>
+<circle cx="4731.75" cy="3340" r="92" fill="#F0EDFF"/>
+<text x="4731.75" y="3367" class="bold" font-size="78" fill="#7A61FF" text-anchor="middle">03</text>
+<rect x="3932.0" y="3480" width="155" height="64" rx="32.0" fill="#F0EDFF"/>
+<text x="4009.5" y="3524.16" class="bold" font-size="29" fill="#7A61FF" text-anchor="middle">03</text>
+<text x="3932.0" y="3635" class="bold" font-size="48" fill="#182133" text-anchor="start">风格或场景延展</text>
+<text x="3932.0" y="3720" class="reg" font-size="34" fill="#68758C" text-anchor="start">保留核心角色关系</text>
+<text x="3932.0" y="3780" class="reg" font-size="34" fill="#68758C" text-anchor="start">更换环境、色调或故事方向</text>
+<rect x="5664.5" y="3213" width="1729.5" height="690" rx="44" fill="#25324C" opacity=".08"/>
+<rect x="5650.5" y="3195" width="1729.5" height="690" rx="44" fill="#FFFFFF" stroke="#DCE5F1" stroke-width="3"/>
+<circle cx="6515.25" cy="3340" r="92" fill="#EAF8F2"/>
+<text x="6515.25" y="3367" class="bold" font-size="78" fill="#2DB77B" text-anchor="middle">04</text>
+<rect x="5715.5" y="3480" width="155" height="64" rx="32.0" fill="#EAF8F2"/>
+<text x="5793.0" y="3524.16" class="bold" font-size="29" fill="#2DB77B" text-anchor="middle">04</text>
+<text x="5715.5" y="3635" class="bold" font-size="48" fill="#182133" text-anchor="start">气质启发 / 自由延展</text>
+<text x="5715.5" y="3720" class="reg" font-size="34" fill="#68758C" text-anchor="start">基于角色气质大胆发挥</text>
+<text x="5715.5" y="3780" class="reg" font-size="34" fill="#68758C" text-anchor="start">探索新的商业宣传表达</text>
+<rect x="300" y="3945" width="7080" height="250" rx="48" fill="#182133"/>
+<text x="390" y="4075" class="bold" font-size="52" fill="#FFFFFF" text-anchor="start">结果操作与任务管理</text>
+<rect x="1220" y="3987" width="940" height="165" rx="32" fill="#24304A"/>
+<circle cx="1276" cy="4070" r="22" fill="#F05B78"/>
+<text x="1315" y="4045" class="bold" font-size="31" fill="#FFFFFF" text-anchor="start">放大预览</text>
+<text x="1315" y="4093" class="reg" font-size="25" fill="#BFC9DB" text-anchor="start">检查画面细节</text>
+<rect x="2210" y="3987" width="940" height="165" rx="32" fill="#24304A"/>
+<circle cx="2266" cy="4070" r="22" fill="#2F6BFF"/>
+<text x="2305" y="4045" class="bold" font-size="31" fill="#FFFFFF" text-anchor="start">下载单张</text>
+<text x="2305" y="4093" class="reg" font-size="25" fill="#BFC9DB" text-anchor="start">保存当前结果</text>
+<rect x="3200" y="3987" width="940" height="165" rx="32" fill="#24304A"/>
+<circle cx="3256" cy="4070" r="22" fill="#7A61FF"/>
+<text x="3295" y="4045" class="bold" font-size="31" fill="#FFFFFF" text-anchor="start">重新生成</text>
+<text x="3295" y="4093" class="reg" font-size="25" fill="#BFC9DB" text-anchor="start">保留方向重新出图</text>
+<rect x="4190" y="3987" width="940" height="165" rx="32" fill="#24304A"/>
+<circle cx="4246" cy="4070" r="22" fill="#F49A45"/>
+<text x="4285" y="4045" class="bold" font-size="31" fill="#FFFFFF" text-anchor="start">换一个方向</text>
+<text x="4285" y="4093" class="reg" font-size="25" fill="#BFC9DB" text-anchor="start">不喜欢当前策划</text>
+<rect x="5180" y="3987" width="940" height="165" rx="32" fill="#24304A"/>
+<circle cx="5236" cy="4070" r="22" fill="#2DB77B"/>
+<text x="5275" y="4045" class="bold" font-size="31" fill="#FFFFFF" text-anchor="start">参考此图继续扩展</text>
+<text x="5275" y="4093" class="reg" font-size="25" fill="#BFC9DB" text-anchor="start">基于结果再生成</text>
+<rect x="6170" y="3987" width="940" height="165" rx="32" fill="#24304A"/>
+<circle cx="6226" cy="4070" r="22" fill="#24B8C6"/>
+<text x="6265" y="4045" class="bold" font-size="31" fill="#FFFFFF" text-anchor="start">历史记录</text>
+<text x="6265" y="4093" class="reg" font-size="25" fill="#BFC9DB" text-anchor="start">回看、复用与管理任务</text>
+<text x="300" y="4280" class="reg" font-size="28" fill="#8A96AA" text-anchor="start">功能结构依据你提供的网页说明与页面截图整理</text>
+</svg>

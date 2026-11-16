@@ -1,0 +1,203 @@
+window.VIDEO_SHOWCASE_DATA = {
+  "真人AI": [
+    {
+      "title": "家庭片段",
+      "category": "real-ai",
+      "categoryLabel": "真人AI",
+      "order": 1,
+      "description": "家庭关系切入剧情。",
+      "cover": "videos/covers/real-ai-1.jpg",
+      "preview": "videos/preview/real-ai-1.mp4",
+      "teaserVideo": "videos/preview/real-ai-1.mp4",
+      "fullVideo": "%E7%AD%9B%E9%80%89/%E8%A7%86%E9%A2%91/videosrawreal-ai/1_2.mp4",
+      "videoSrc": "%E7%AD%9B%E9%80%89/%E8%A7%86%E9%A2%91/videosrawreal-ai/1_2.mp4",
+      "status": "show"
+    },
+    {
+      "title": "门口片段",
+      "category": "real-ai",
+      "categoryLabel": "真人AI",
+      "order": 2,
+      "description": "生活场景制造悬念。",
+      "cover": "videos/covers/real-ai-2.jpg",
+      "preview": "videos/preview/real-ai-2.mp4",
+      "teaserVideo": "videos/preview/real-ai-2.mp4",
+      "fullVideo": "%E7%AD%9B%E9%80%89/%E8%A7%86%E9%A2%91/videosrawreal-ai/2_1.mp4",
+      "videoSrc": "%E7%AD%9B%E9%80%89/%E8%A7%86%E9%A2%91/videosrawreal-ai/2_1.mp4",
+      "status": "show"
+    },
+    {
+      "title": "乐园片段",
+      "category": "real-ai",
+      "categoryLabel": "真人AI",
+      "order": 3,
+      "description": "现实与夸张反差。",
+      "cover": "videos/covers/real-ai-3.jpg",
+      "preview": "videos/preview/real-ai-3.mp4",
+      "teaserVideo": "videos/preview/real-ai-3.mp4",
+      "fullVideo": "%E7%AD%9B%E9%80%89/%E8%A7%86%E9%A2%91/videosrawreal-ai/3_1.mp4",
+      "videoSrc": "%E7%AD%9B%E9%80%89/%E8%A7%86%E9%A2%91/videosrawreal-ai/3_1.mp4",
+      "status": "show"
+    },
+    {
+      "title": "沙雕梗片段",
+      "category": "real-ai",
+      "categoryLabel": "真人AI",
+      "order": 4,
+      "description": "夸张情绪强化节奏。",
+      "cover": "videos/covers/real-ai-4.jpg",
+      "preview": "videos/preview/real-ai-4.mp4",
+      "teaserVideo": "videos/preview/real-ai-4.mp4",
+      "fullVideo": "%E7%AD%9B%E9%80%89/%E8%A7%86%E9%A2%91/videosrawreal-ai/4_1.mp4",
+      "videoSrc": "%E7%AD%9B%E9%80%89/%E8%A7%86%E9%A2%91/videosrawreal-ai/4_1.mp4",
+      "status": "show"
+    },
+    {
+      "title": "剧情片段",
+      "category": "real-ai",
+      "categoryLabel": "真人AI",
+      "order": 5,
+      "description": "真人叙事氛围包装。",
+      "cover": "videos/covers/real-ai-5.jpg",
+      "preview": "videos/preview/real-ai-5.mp4",
+      "teaserVideo": "videos/preview/real-ai-5.mp4",
+      "fullVideo": "%E7%AD%9B%E9%80%89/%E8%A7%86%E9%A2%91/videosrawreal-ai/5_1.mp4",
+      "videoSrc": "%E7%AD%9B%E9%80%89/%E8%A7%86%E9%A2%91/videosrawreal-ai/5_1.mp4",
+      "status": "show"
+    }
+  ],
+  "游戏角色小剧场": [
+    {
+      "title": "角色登场",
+      "category": "game-mini-story",
+      "categoryLabel": "游戏角色小剧场",
+      "order": 1,
+      "description": "角色亮相建立吸引。",
+      "cover": "videos/covers/game-mini-story-1.jpg",
+      "preview": "videos/preview/game-mini-story-1.mp4",
+      "teaserVideo": "videos/preview/game-mini-story-1.mp4",
+      "fullVideo": "%E7%AD%9B%E9%80%89/%E8%A7%86%E9%A2%91/videosrawgame-mini-story/1_1.mp4",
+      "videoSrc": "%E7%AD%9B%E9%80%89/%E8%A7%86%E9%A2%91/videosrawgame-mini-story/1_1.mp4",
+      "status": "show"
+    },
+    {
+      "title": "召唤冒险",
+      "category": "game-mini-story",
+      "categoryLabel": "游戏角色小剧场",
+      "order": 2,
+      "description": "神宠冒险卖点包装。",
+      "cover": "videos/covers/game-mini-story-2.jpg",
+      "preview": "videos/preview/game-mini-story-2.mp4",
+      "teaserVideo": "videos/preview/game-mini-story-2.mp4",
+      "fullVideo": "%E7%AD%9B%E9%80%89/%E8%A7%86%E9%A2%91/videosrawgame-mini-story/2_1.mp4",
+      "videoSrc": "%E7%AD%9B%E9%80%89/%E8%A7%86%E9%A2%91/videosrawgame-mini-story/2_1.mp4",
+      "status": "show"
+    },
+    {
+      "title": "战斗小剧场",
+      "category": "game-mini-story",
+      "categoryLabel": "游戏角色小剧场",
+      "order": 3,
+      "description": "对峙氛围突出冲突。",
+      "cover": "videos/covers/game-mini-story-3.jpg",
+      "preview": "videos/preview/game-mini-story-3.mp4",
+      "teaserVideo": "videos/preview/game-mini-story-3.mp4",
+      "fullVideo": "%E7%AD%9B%E9%80%89/%E8%A7%86%E9%A2%91/videosrawgame-mini-story/3_1.mp4",
+      "videoSrc": "%E7%AD%9B%E9%80%89/%E8%A7%86%E9%A2%91/videosrawgame-mini-story/3_1.mp4",
+      "status": "show"
+    },
+    {
+      "title": "萌宠奇遇",
+      "category": "game-mini-story",
+      "categoryLabel": "游戏角色小剧场",
+      "order": 4,
+      "description": "萌宠互动奇幻冒险。",
+      "cover": "videos/covers/game-mini-story-4.jpg",
+      "preview": "videos/preview/game-mini-story-4.mp4",
+      "teaserVideo": "videos/preview/game-mini-story-4.mp4",
+      "fullVideo": "%E7%AD%9B%E9%80%89/%E8%A7%86%E9%A2%91/videosrawgame-mini-story/4_1.mp4",
+      "videoSrc": "%E7%AD%9B%E9%80%89/%E8%A7%86%E9%A2%91/videosrawgame-mini-story/4_1.mp4",
+      "status": "show"
+    },
+    {
+      "title": "龙宠对决",
+      "category": "game-mini-story",
+      "categoryLabel": "游戏角色小剧场",
+      "order": 5,
+      "description": "人宠同屏强化张力。",
+      "cover": "videos/covers/game-mini-story-5.jpg",
+      "preview": "videos/preview/game-mini-story-5.mp4",
+      "teaserVideo": "videos/preview/game-mini-story-5.mp4",
+      "fullVideo": "%E7%AD%9B%E9%80%89/%E8%A7%86%E9%A2%91/videosrawgame-mini-story/5_1.mp4",
+      "videoSrc": "%E7%AD%9B%E9%80%89/%E8%A7%86%E9%A2%91/videosrawgame-mini-story/5_1.mp4",
+      "status": "show"
+    }
+  ],
+  "AI视频": [
+    {
+      "title": "巨龙压迫",
+      "category": "ai-video",
+      "categoryLabel": "AI视频",
+      "order": 1,
+      "description": "巨龙近景强化压迫。",
+      "cover": "videos/covers/ai-video-1.jpg",
+      "preview": "videos/preview/ai-video-1.mp4",
+      "teaserVideo": "videos/preview/ai-video-1.mp4",
+      "fullVideo": "%E7%AD%9B%E9%80%89/%E8%A7%86%E9%A2%91/videosrawai-video/1_1.mp4",
+      "videoSrc": "%E7%AD%9B%E9%80%89/%E8%A7%86%E9%A2%91/videosrawai-video/1_1.mp4",
+      "status": "show"
+    },
+    {
+      "title": "神宠召唤",
+      "category": "ai-video",
+      "categoryLabel": "AI视频",
+      "order": 2,
+      "description": "人宠同屏突出召唤。",
+      "cover": "videos/covers/ai-video-2.jpg",
+      "preview": "videos/preview/ai-video-2.mp4",
+      "teaserVideo": "videos/preview/ai-video-2.mp4",
+      "fullVideo": "%E7%AD%9B%E9%80%89/%E8%A7%86%E9%A2%91/videosrawai-video/2_1.mp4",
+      "videoSrc": "%E7%AD%9B%E9%80%89/%E8%A7%86%E9%A2%91/videosrawai-video/2_1.mp4",
+      "status": "show"
+    },
+    {
+      "title": "召唤神宠",
+      "category": "ai-video",
+      "categoryLabel": "AI视频",
+      "order": 3,
+      "description": "高饱和强化吸引。",
+      "cover": "videos/covers/ai-video-3.jpg",
+      "preview": "videos/preview/ai-video-3.mp4",
+      "teaserVideo": "videos/preview/ai-video-3.mp4",
+      "fullVideo": "%E7%AD%9B%E9%80%89/%E8%A7%86%E9%A2%91/videosrawai-video/3_1.mp4",
+      "videoSrc": "%E7%AD%9B%E9%80%89/%E8%A7%86%E9%A2%91/videosrawai-video/3_1.mp4",
+      "status": "show"
+    },
+    {
+      "title": "龙宠对峙",
+      "category": "ai-video",
+      "categoryLabel": "AI视频",
+      "order": 4,
+      "description": "对峙关系制造张力。",
+      "cover": "videos/covers/ai-video-4.jpg",
+      "preview": "videos/preview/ai-video-4.mp4",
+      "teaserVideo": "videos/preview/ai-video-4.mp4",
+      "fullVideo": "%E7%AD%9B%E9%80%89/%E8%A7%86%E9%A2%91/videosrawai-video/4_1.mp4",
+      "videoSrc": "%E7%AD%9B%E9%80%89/%E8%A7%86%E9%A2%91/videosrawai-video/4_1.mp4",
+      "status": "show"
+    },
+    {
+      "title": "神宠集结",
+      "category": "ai-video",
+      "categoryLabel": "AI视频",
+      "order": 5,
+      "description": "神宠集结增强爽感。",
+      "cover": "videos/covers/ai-video-5.jpg",
+      "preview": "videos/preview/ai-video-5.mp4",
+      "teaserVideo": "videos/preview/ai-video-5.mp4",
+      "fullVideo": "%E7%AD%9B%E9%80%89/%E8%A7%86%E9%A2%91/videosrawai-video/5_1.mp4",
+      "videoSrc": "%E7%AD%9B%E9%80%89/%E8%A7%86%E9%A2%91/videosrawai-video/5_1.mp4",
+      "status": "show"
+    }
+  ]
+};
