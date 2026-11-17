@@ -9999,6 +9999,32 @@
             gap: clamp(7px, .7vw, 10px);
         }
 
+        #ua-creative .ua-wall-row {
+            overflow-x: auto;
+        }
+
+        #ua-creative .ua-wall-track {
+            animation: none;
+            will-change: auto;
+        }
+
+        img[data-wait-for-image] {
+            visibility: hidden;
+        }
+
+        .store-main-display .store-image-loading {
+            display: none;
+            position: absolute;
+            inset: 0;
+            place-items: center;
+            color: #eef2ff;
+            font-size: 13px;
+        }
+
+        .store-main-display:has(img[data-wait-for-image]) .store-image-loading {
+            display: grid;
+        }
+
         #ua-creative .ua-wall-caption {
             display: none;
         }
@@ -17432,6 +17458,7 @@
                     <div class="store-package-detail" aria-live="polite">
                         <button class="store-carousel-nav store-carousel-prev" type="button" aria-label="上一组商店图"></button>
                         <button class="store-main-display" type="button" aria-label="打开当前商店五图主图">
+                            <span class="store-image-loading" role="status">正在加载商店图…</span>
                             <img src="" alt="">
                         </button>
                         <div class="store-sub-grid" aria-label="当前素材包次图"></div>
@@ -18866,7 +18893,7 @@
                 if (!longIndex) return;
                 longIndex.innerHTML = longItems.map((item, index) => `
                     <button class="long-index-card${index === activeLongIndex ? ' is-active' : ''}" type="button" data-long-index="${index}" aria-current="${index === activeLongIndex ? 'true' : 'false'}" aria-pressed="${index === activeLongIndex ? 'true' : 'false'}">
-                        <span class="long-index-thumb"><img loading="lazy" src="${item.src}" alt="${item.title} 索引缩略图"></span>
+                        <span class="long-index-thumb"><img loading="lazy" decoding="async" src="${item.src.replace(/\.jpg$/i, '.thumb.webp')}" alt="${item.title} 索引缩略图"></span>
                         <span class="long-index-meta"><span>LONG ${String(index + 1).padStart(2, '0')}</span><strong>${item.title}</strong></span>
                     </button>
                 `).join('');
@@ -18898,6 +18925,26 @@
             window.addEventListener('keydown', event => {
                 if (event.key === 'Escape' && longDetailLightbox?.classList.contains('is-open')) {
                     closeLongDetail();
+                }
+            });
+        }
+
+        function revealLoadedImages(container) {
+            container?.querySelectorAll('img[data-wait-for-image]').forEach(image => {
+                const reveal = () => image.removeAttribute('data-wait-for-image');
+                const recover = () => {
+                    const original = image.dataset.originalSrc;
+                    if (original && image.getAttribute('src') !== original) {
+                        image.src = original;
+                    } else {
+                        reveal();
+                    }
+                };
+                image.onload = reveal;
+                image.onerror = recover;
+                if (image.complete && image.getAttribute('src')) {
+                    if (image.naturalWidth) reveal();
+                    else recover();
                 }
             });
         }
@@ -18979,14 +19026,6 @@
                 uaWall?.classList.toggle('is-paused', isPaused);
             }
 
-            function chunkUaItems(items, size) {
-                const chunks = [];
-                for (let index = 0; index < items.length; index += size) {
-                    chunks.push(items.slice(index, index + size));
-                }
-                return chunks;
-            }
-
             function interleaveUaItems(primaryItems, secondaryItems) {
                 const merged = [];
                 const maxLength = Math.max(primaryItems.length, secondaryItems.length);
@@ -19002,8 +19041,14 @@
                 const squares = uaCreatives.filter(item => item.type === 'square');
                 const portraits = uaCreatives.filter(item => item.type === 'portrait');
                 const mixed = interleaveUaItems(squares, portraits);
+                const landscapeRows = Math.ceil(landscapes.length / 7);
+                const balancedRows = Array.from({ length: landscapeRows }, (_, index) => {
+                    const start = Math.floor(index * landscapes.length / landscapeRows);
+                    const end = Math.floor((index + 1) * landscapes.length / landscapeRows);
+                    return { type: 'landscape', items: landscapes.slice(start, end) };
+                });
                 return [
-                    ...chunkUaItems(landscapes, 7).map(items => ({ type: 'landscape', items })),
+                    ...balancedRows,
                     { type: 'mixed', items: mixed }
                 ].filter(row => row.items.length).map((row, rowIndex) => ({
                     rowIndex,
@@ -19015,26 +19060,23 @@
                 if (!uaWall) return;
                 uaRows.splice(0, uaRows.length, ...buildUaRows());
                 uaWall.innerHTML = uaRows.map(row => {
-                    const isReverse = (row.type === 'landscape' && row.rowIndex % 2 === 1) || row.type === 'mixed';
-                    const loopSets = [0, 1, 2, 3];
-                    const renderPoster = (item, colIndex, isClone = false) => `
-                        <button class="ua-wall-poster is-${item.type}${isClone ? ' is-clone' : ''}" type="button" data-ua-index="${item.index}" data-ua-col-index="${colIndex}" data-ua-row-count="${row.items.length}" data-ua-layout-row="${row.rowIndex}" data-ua-row="${row.type}" data-ratio="${item.ratio}" ${isClone ? 'tabindex="-1" aria-hidden="true"' : `aria-label="买量图 ${String(item.index + 1).padStart(2, '0')} ${item.ratio}"`}>
-                            <img loading="lazy" src="${item.src}" alt="买量图 ${String(item.index + 1).padStart(2, '0')}">
+                    const renderPoster = (item, colIndex) => `
+                        <button class="ua-wall-poster is-${item.type}" type="button" data-ua-index="${item.index}" data-ua-col-index="${colIndex}" data-ua-row-count="${row.items.length}" data-ua-layout-row="${row.rowIndex}" data-ua-row="${row.type}" data-ratio="${item.ratio}" aria-label="买量图 ${String(item.index + 1).padStart(2, '0')} ${item.ratio}">
+                            <img loading="lazy" decoding="async" data-wait-for-image data-original-src="${item.src}" src="${item.src.replace(/\.[^.]+$/, '.display.webp')}" alt="买量图 ${String(item.index + 1).padStart(2, '0')}">
                         </button>
                     `;
                     return `
-                        <div class="ua-wall-row is-${row.type}${isReverse ? ' is-reverse' : ''}" data-ua-layout-row="${row.rowIndex}" data-ua-row="${row.type}">
+                        <div class="ua-wall-row is-${row.type}" data-ua-layout-row="${row.rowIndex}" data-ua-row="${row.type}">
                             <span class="ua-wall-row-label">${uaRowLabels[row.type]}</span>
                             <div class="ua-wall-track">
-                                ${loopSets.map(setIndex => `
-                                    <div class="ua-wall-loop-set"${setIndex > 0 ? ' aria-hidden="true"' : ''}>
-                                        ${row.items.map((item, colIndex) => renderPoster(item, colIndex, setIndex > 0)).join('')}
-                                    </div>
-                                `).join('')}
+                                <div class="ua-wall-loop-set">
+                                    ${row.items.map(renderPoster).join('')}
+                                </div>
                             </div>
                         </div>
                     `;
                 }).join('');
+                revealLoadedImages(uaWall);
                 uaWallPosters = Array.from(uaWall.querySelectorAll('.ua-wall-poster'));
                 uaWallPosters.forEach(poster => {
                     poster.addEventListener('mouseenter', () => {
@@ -19213,17 +19255,18 @@
                 packageList.innerHTML = Object.entries(storePackages).map(([packageId, pack]) => {
                     const [main, ...subs] = pack.images;
                     const padded = packageId.padStart(2, '0');
-                    const sheetMarkup = subs.map(src => `<span class="store-pack-sheet"><img loading="lazy" src="${storePreview(src)}" alt=""></span>`).join('');
+                    const sheetMarkup = subs.map(() => '<span class="store-pack-sheet"></span>').join('');
                     return `
                         <button class="store-pack-card is-${pack.orientation}" type="button" data-store-pack="${packageId}" aria-pressed="false">
                             <span class="store-pack-stack" aria-hidden="true">
                                 ${sheetMarkup}
-                                <span class="store-pack-main"><img loading="lazy" src="${storePreview(main)}" alt=""></span>
+                                <span class="store-pack-main"><img loading="lazy" decoding="async" data-wait-for-image data-original-src="${main}" src="${storePreview(main)}" alt=""></span>
                             </span>
                             <span class="store-pack-number">${padded}</span>
                         </button>
                     `;
                 }).join('');
+                revealLoadedImages(packageList);
                 packageList.querySelectorAll('.store-pack-card').forEach(card => {
                     card.addEventListener('click', () => renderStorePackage(card.dataset.storePack || '1', true));
                 });
@@ -19258,7 +19301,10 @@
                 if (mainImage && src) {
                     mainImage.loading = 'lazy';
                     mainImage.fetchPriority = 'high';
+                    mainImage.setAttribute('data-wait-for-image', '');
+                    mainImage.dataset.originalSrc = src;
                     mainImage.src = storePreview(src);
+                    revealLoadedImages(mainDisplay);
                     mainImage.alt = `${activeStorePack.padStart(2, '0')} 商店五图${index === 0 ? '主图' : `次图 ${index}`}`;
                     applyStoreImageRatio(mainImage, mainDisplay);
                 }
@@ -19289,9 +19335,10 @@
                 }
                 subGrid.innerHTML = images.slice(1).map((src, index) => `
                     <button class="store-sub-thumb" type="button" aria-pressed="false" data-store-image-index="${index + 1}">
-                        <img loading="lazy" src="${storePreview(src)}" alt="${packageId.padStart(2, '0')} 商店五图次图 ${index + 1}">
+                        <img loading="lazy" decoding="async" data-wait-for-image data-original-src="${src}" src="${storePreview(src)}" alt="${packageId.padStart(2, '0')} 商店五图次图 ${index + 1}">
                     </button>
                 `).join('');
+                revealLoadedImages(subGrid);
                 setStoreMainImage(0);
                 subGrid.querySelectorAll('.store-sub-thumb').forEach(button => {
                     applyStoreImageRatio(button.querySelector('img'), button);
@@ -19905,8 +19952,10 @@
                 return matches[0]?.index ?? null;
             }
 
+            let activeTeaserObserver;
             function renderVideoCards() {
                 if (!videoStage) return;
+                activeTeaserObserver?.disconnect();
                 const items = getVideoItems();
                 videoStage.innerHTML = '';
                 items.forEach((item, index) => {
@@ -19952,7 +20001,12 @@
                         return previewVideo;
                     };
                     if (offset === 0) {
-                        window.requestAnimationFrame(loadPreviewVideo);
+                        activeTeaserObserver = new IntersectionObserver(([entry], observer) => {
+                            if (!entry.isIntersecting) return;
+                            observer.disconnect();
+                            loadPreviewVideo();
+                        });
+                        activeTeaserObserver.observe(card);
                     }
                     card.addEventListener('mouseenter', () => {
                         loadPreviewVideo();
