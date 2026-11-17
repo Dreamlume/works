@@ -18920,6 +18920,16 @@
             });
         }
 
+        function loadImagesNearViewport(element, startLoading, margin = 560) {
+            if (!element) return;
+            const observer = new IntersectionObserver(([entry]) => {
+                if (!entry.isIntersecting) return;
+                observer.disconnect();
+                startLoading();
+            }, { rootMargin: `${margin}px 0px` });
+            observer.observe(element);
+        }
+
         function revealLoadedImages(container) {
             container?.querySelectorAll('img[data-wait-for-image]').forEach(image => {
                 const reveal = () => image.removeAttribute('data-wait-for-image');
@@ -19182,6 +19192,14 @@
                 if (event.key === 'ArrowRight') stepUaLightbox(1);
             });
             renderUaWall();
+            uaWall?.querySelectorAll('.ua-wall-row').forEach(row => {
+                loadImagesNearViewport(row, () => {
+                    // Load one copy of each image before the moving row reaches the viewport.
+                    row.querySelectorAll('.ua-wall-loop-set:first-child img').forEach(image => {
+                        image.loading = 'eager';
+                    });
+                });
+            });
             updateUaFocusState();
             startUaWallAnimation();
         }
@@ -19231,6 +19249,7 @@
             const mainImage = mainDisplay?.querySelector('img');
             const detailPanel = storeModule.querySelector('.store-package-detail');
             const subGrid = storeModule.querySelector('.store-sub-grid');
+            let storeDetailNearViewport = false;
             const lightbox = storeModule.querySelector('.store-lightbox');
             const lightboxImage = lightbox?.querySelector('img');
             const lightboxClose = lightbox?.querySelector('.store-lightbox-close');
@@ -19296,7 +19315,7 @@
                 const src = images[index] || images[0];
                 activeStoreImageIndex = index;
                 if (mainImage && src) {
-                    mainImage.loading = 'lazy';
+                    mainImage.loading = storeDetailNearViewport ? 'eager' : 'lazy';
                     mainImage.fetchPriority = 'high';
                     mainImage.setAttribute('data-wait-for-image', '');
                     mainImage.dataset.originalSrc = src;
@@ -19336,6 +19355,9 @@
                     </button>
                 `).join('');
                 revealLoadedImages(subGrid);
+                if (storeDetailNearViewport) {
+                    subGrid.querySelectorAll('img').forEach(image => { image.loading = 'eager'; });
+                }
                 setStoreMainImage(0);
                 subGrid.querySelectorAll('.store-sub-thumb').forEach(button => {
                     applyStoreImageRatio(button.querySelector('img'), button);
@@ -19393,6 +19415,14 @@
                 if (event.key === 'ArrowRight') stepStoreLightbox(1);
             });
             renderStorePackage(activeStorePack);
+            loadImagesNearViewport(packageList, () => {
+                packageList.querySelectorAll('img').forEach(image => { image.loading = 'eager'; });
+            });
+            loadImagesNearViewport(detailPanel, () => {
+                storeDetailNearViewport = true;
+                if (mainImage) mainImage.loading = 'eager';
+                subGrid?.querySelectorAll('img').forEach(image => { image.loading = 'eager'; });
+            });
         }
 
         // ===== Selected key visual page flip =====
@@ -19556,7 +19586,7 @@
                 if (!entry.isIntersecting) return;
                 featureObserver.disconnect();
                 if (!featureRequest) setFeaturePage(featureIndex);
-            }, { rootMargin: '480px 0px' });
+            }, { rootMargin: '700px 0px' });
             featureObserver.observe(featureFlip);
             featurePrev?.addEventListener('click', () => setFeaturePage(featureIndex - 1));
             featureNext?.addEventListener('click', () => setFeaturePage(featureIndex + 1));
