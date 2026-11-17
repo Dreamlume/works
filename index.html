@@ -18920,6 +18920,19 @@
             });
         }
 
+        document.querySelectorAll('img[src^="筛选/紫龙2/"]').forEach(image => {
+            const retryOriginal = () => {
+                const url = new URL(image.src);
+                url.searchParams.set('retry', '1');
+                image.src = url.href;
+            };
+            if (image.complete && !image.naturalWidth) {
+                retryOriginal();
+            } else {
+                image.addEventListener('error', retryOriginal, { once: true });
+            }
+        });
+
         function loadImagesNearViewport(element, startLoading, margin = 560) {
             if (!element) return;
             const observer = new IntersectionObserver(([entry]) => {
