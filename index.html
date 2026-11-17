@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QI · 视觉记录 — 游戏视觉设计师</title>
     <link rel="icon" href="data:,">
+    <link rel="preload" as="image" href="hero-组件/hero-character.webp" fetchpriority="high">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700;900&family=Cinzel:wght@400;700;900&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
     <style>
@@ -56,7 +57,7 @@
                 radial-gradient(circle at 0% 4%, rgba(35, 42, 66, 0.16) 0%, rgba(68, 86, 104, 0.08) 18%, transparent 36%),
                 radial-gradient(circle at 92% 8%, rgba(221, 183, 104, 0.06) 0%, transparent 32%),
                 linear-gradient(180deg, rgba(237, 242, 242, 0.72), rgba(237, 242, 242, 0.72)),
-                url('hero-组件/封面3-hd.png');
+                url('hero-组件/hero-background.webp');
             background-size:
                 28px 28px,
                 28px 28px,
@@ -16838,12 +16839,12 @@
     <section class="hero" id="home">
         <!-- 背景-->
         <div class="hero-bg-layer">
-            <img src="hero-组件/封面3-hd.png" alt="背景">
+            <img src="hero-组件/hero-background.webp" fetchpriority="high" alt="背景">
         </div>
 
         <!-- 人物 -->
         <div class="hero-obj" data-name="character" id="obj-character">
-            <img src="hero-组件/人1.png" alt="角色">
+            <img src="hero-组件/hero-character.webp" fetchpriority="high" alt="角色">
         </div>
 
         <!-- 蜡烛 -->
