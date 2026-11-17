@@ -9572,6 +9572,20 @@
             filter: drop-shadow(0 14px 28px rgba(30, 34, 52, 0.22));
         }
 
+        .feature-load-status {
+            position: absolute;
+            z-index: 12;
+            left: 50%;
+            bottom: 12px;
+            transform: translateX(-50%);
+            padding: 6px 12px;
+            border-radius: 16px;
+            color: white;
+            background: rgba(27, 32, 48, 0.88);
+            font-size: 13px;
+            pointer-events: none;
+        }
+
         #key-visuals .feature-book::before,
         #key-visuals .book-page-turning .book-visual-link {
             background-color: var(--portfolio-surface-1);
@@ -17353,6 +17367,7 @@
                 <div class="feature-flip-section reveal">
                     <div class="feature-flip-inner">
                         <div class="feature-book-stage" aria-live="polite">
+                            <span class="feature-load-status" role="status">正在加载原图…</span>
                             <div class="feature-book">
                                 <div class="book-leaf-stack"></div>
                                 <div class="book-page book-page-left">
@@ -19359,6 +19374,30 @@
             let featureIndex = 0;
             let featureIsTurning = false;
             let featurePendingIndex = null;
+            let featureHasImage = false;
+            let featureRequest = 0;
+            const featureLoadStatus = featureFlip.querySelector('.feature-load-status');
+            const featureLoads = new Map();
+
+            function loadFeatureImage(index, priority = 'auto') {
+                const src = featureImages[index];
+                if (!featureLoads.has(src)) {
+                    const image = new Image();
+                    image.fetchPriority = priority;
+                    image.src = src;
+                    const ready = image.decode().catch(error => {
+                        featureLoads.delete(src);
+                        throw error;
+                    });
+                    featureLoads.set(src, ready);
+                }
+                return featureLoads.get(src);
+            }
+
+            function showFeatureStatus(message) {
+                featureLoadStatus.textContent = message;
+                featureLoadStatus.hidden = !message;
+            }
 
             function normalizeFeatureIndex(index) {
                 return (index + featureImages.length) % featureImages.length;
@@ -19367,7 +19406,7 @@
             function updateFeatureDots(index) {
                 featureFlip.style.setProperty('--feature-accent', featureAccents[index] || '#18d6c4');
                 featureDots.forEach((dot, dotIndex) => {
-                    dot.style.setProperty('--dot-image', `url("${featureImages[dotIndex]}")`);
+                    dot.style.setProperty('--dot-image', dotIndex === index ? `url("${featureImages[index]}")` : 'none');
                     dot.style.setProperty('--dot-accent', featureAccents[dotIndex] || '#18d6c4');
                     dot.setAttribute('data-label', `${String(dotIndex + 1).padStart(2, '0')} KEY VISUAL`);
                     dot.classList.toggle('is-active', dotIndex === index);
@@ -19404,14 +19443,35 @@
                 setBookImage(turnImg, turnLink, src, label);
             }
 
-            function setFeaturePage(nextIndex) {
+            async function setFeaturePage(nextIndex) {
                 if (!featureImages.length) return;
                 const normalizedIndex = normalizeFeatureIndex(nextIndex);
                 if (featureIsTurning) {
                     featurePendingIndex = normalizedIndex;
                     return;
                 }
-                if (normalizedIndex === featureIndex) return;
+                const request = ++featureRequest;
+                if (normalizedIndex === featureIndex && featureHasImage) {
+                    showFeatureStatus('');
+                    return;
+                }
+                showFeatureStatus('正在加载原图…');
+                try {
+                    await loadFeatureImage(normalizedIndex, 'high');
+                } catch {
+                    if (request === featureRequest) showFeatureStatus('原图加载失败，可再次点击切换重试');
+                    return;
+                }
+                if (request !== featureRequest) return;
+                showFeatureStatus('');
+
+                if (!featureHasImage) {
+                    featureHasImage = true;
+                    featureIndex = normalizedIndex;
+                    renderFeatureBook(featureIndex);
+                    loadFeatureImage(normalizeFeatureIndex(featureIndex + 1), 'low').catch(() => {});
+                    return;
+                }
 
                 featureIsTurning = true;
                 const currentIndex = featureIndex;
@@ -19439,6 +19499,7 @@
                 window.setTimeout(() => {
                     featureBook?.classList.remove('is-turning-next', 'is-turning-prev');
                     featureIsTurning = false;
+                    loadFeatureImage(normalizeFeatureIndex(featureIndex + 1), 'low').catch(() => {});
                     const queuedIndex = featurePendingIndex;
                     featurePendingIndex = null;
                     if (queuedIndex !== null && queuedIndex !== featureIndex) {
@@ -19447,7 +19508,12 @@
                 }, 700);
             }
 
-            renderFeatureBook(featureIndex);
+            const featureObserver = new IntersectionObserver(([entry]) => {
+                if (!entry.isIntersecting) return;
+                featureObserver.disconnect();
+                if (!featureRequest) setFeaturePage(featureIndex);
+            }, { rootMargin: '480px 0px' });
+            featureObserver.observe(featureFlip);
             featurePrev?.addEventListener('click', () => setFeaturePage(featureIndex - 1));
             featureNext?.addEventListener('click', () => setFeaturePage(featureIndex + 1));
             featureDots.forEach((dot, dotIndex) => {
