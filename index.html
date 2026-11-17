@@ -18920,42 +18920,100 @@
             });
         }
 
-        document.querySelectorAll('img[src^="筛选/紫龙2/"]').forEach(image => {
-            if (location.hostname === 'dreamlume.github.io' && image.closest('.core-material-thumb')) {
-                const original = new URL(image.src);
-                const repositoryPath = original.pathname.replace(/^\/works\//, '/');
-                let fallbackStarted = false;
-                let fallbackTimer;
-                const loadBackup = () => {
-                    if (fallbackStarted || (image.complete && image.naturalWidth)) return;
-                    fallbackStarted = true;
+        if (location.hostname === 'dreamlume.github.io') {
+            const artworkSections = document.querySelectorAll('#performance, #graphics, #ai-creative-systems');
+            const watchedImages = new WeakMap();
+            const pendingBackups = new Map();
+
+            function loadArtworkBackup(source) {
+                const path = new URL(source).pathname.slice('/works'.length);
+                if (!pendingBackups.has(path)) {
                     const backup = new Image();
-                    backup.src = 'https://raw.githubusercontent.com/Dreamlume/works/main' + repositoryPath;
-                    backup.decode().then(() => {
-                        if (!(image.complete && image.naturalWidth)) image.src = backup.src;
+                    backup.fetchPriority = 'low';
+                    backup.src = 'https://raw.githubusercontent.com/Dreamlume/works/main' + path;
+                    const ready = backup.decode().then(() => backup.src);
+                    pendingBackups.set(path, ready);
+                    ready.then(() => pendingBackups.delete(path), () => pendingBackups.delete(path));
+                }
+                return pendingBackups.get(path);
+            }
+
+            const artworkObserver = new IntersectionObserver(entries => {
+                for (const entry of entries) {
+                    if (!entry.isIntersecting) continue;
+                    const image = entry.target;
+                    artworkObserver.unobserve(image);
+                    const request = watchedImages.get(image);
+                    if (request && image.src === request.source) {
+                        image.loading = 'eager';
+                        request.timer = setTimeout(request.tryBackup, 4000);
+                        if (image.complete && !image.naturalWidth) request.tryBackup();
+                    }
+                }
+            }, { rootMargin: '900px 0px' });
+
+            function watchArtwork(image) {
+                const source = image.src;
+                if (watchedImages.get(image)?.source === source) return;
+                const url = new URL(source, location.href);
+                if (
+                    url.origin !== location.origin ||
+                    !url.pathname.startsWith('/works/') ||
+                    !/\.(?:jpe?g|png|webp|avif|gif|svg)$/i.test(url.pathname) ||
+                    image.closest('.feature-book')
+                ) return;
+
+                const previous = watchedImages.get(image);
+                if (previous) {
+                    clearTimeout(previous.timer);
+                    previous.events.abort();
+                }
+                if (image.complete && image.naturalWidth) return;
+
+                const request = { source, events: new AbortController(), timer: null, started: false };
+                const stillWaiting = () =>
+                    image.isConnected && image.src === source && !(image.complete && image.naturalWidth);
+                request.tryBackup = () => {
+                    if (request.started || !stillWaiting()) return;
+                    request.started = true;
+                    loadArtworkBackup(source).then(backup => {
+                        if (stillWaiting()) image.src = backup;
                     }).catch(() => {});
                 };
-                image.addEventListener('load', () => clearTimeout(fallbackTimer), { once: true });
-                image.addEventListener('error', loadBackup, { once: true });
-                loadImagesNearViewport(image, () => {
-                    image.loading = 'eager';
-                    if (!(image.complete && image.naturalWidth)) {
-                        fallbackTimer = setTimeout(loadBackup, 4000);
+
+                watchedImages.set(image, request);
+                image.addEventListener('load', () => {
+                    if (image.src !== source) return;
+                    clearTimeout(request.timer);
+                    artworkObserver.unobserve(image);
+                    request.events.abort();
+                }, { signal: request.events.signal });
+                image.addEventListener('error', request.tryBackup, { signal: request.events.signal });
+                artworkObserver.observe(image);
+            }
+
+            function watchArtworkIn(node) {
+                if (node instanceof HTMLImageElement) watchArtwork(node);
+                else node.querySelectorAll?.('img[src]').forEach(watchArtwork);
+            }
+
+            const artworkChanges = new MutationObserver(records => {
+                for (const record of records) {
+                    if (record.type === 'attributes') watchArtwork(record.target);
+                    else {
+                        record.addedNodes.forEach(watchArtworkIn);
+                        record.removedNodes.forEach(node => {
+                            if (node instanceof HTMLImageElement) artworkObserver.unobserve(node);
+                            else node.querySelectorAll?.('img').forEach(image => artworkObserver.unobserve(image));
+                        });
                     }
-                }, 900);
-                return;
+                }
+            });
+            for (const section of artworkSections) {
+                watchArtworkIn(section);
+                artworkChanges.observe(section, { subtree: true, childList: true, attributes: true, attributeFilter: ['src'] });
             }
-            const retryOriginal = () => {
-                const url = new URL(image.src);
-                url.searchParams.set('retry', '1');
-                image.src = url.href;
-            };
-            if (image.complete && !image.naturalWidth) {
-                retryOriginal();
-            } else {
-                image.addEventListener('error', retryOriginal, { once: true });
-            }
-        });
+        }
 
         function loadImagesNearViewport(element, startLoading, margin = 560) {
             if (!element) return;
