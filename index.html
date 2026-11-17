@@ -1253,7 +1253,7 @@
 
         .feature-book.is-turning-next .book-page-turning {
             opacity: 1;
-            animation: bookTurnNext 0.58s cubic-bezier(0.2, 0.72, 0.18, 1) forwards;
+            animation: bookTurnNext 0.30s cubic-bezier(0.2, 0.72, 0.18, 1) forwards;
         }
 
         .feature-book.is-turning-prev .book-page-turning {
@@ -1261,7 +1261,7 @@
             border-radius: 14px 0 0 14px;
             transform-origin: right center;
             opacity: 1;
-            animation: bookTurnPrev 0.58s cubic-bezier(0.2, 0.72, 0.18, 1) forwards;
+            animation: bookTurnPrev 0.30s cubic-bezier(0.2, 0.72, 0.18, 1) forwards;
         }
 
         .feature-book.is-turning-next .book-spine,
@@ -16851,32 +16851,32 @@
 
         <!-- 蜡烛 -->
         <div class="hero-obj" data-name="candle" id="obj-candle">
-            <img src="hero-组件/蜡烛.png" alt="蜡烛">
+            <img src="hero-组件/蜡烛.webp" alt="蜡烛">
         </div>
 
         <!-- 大水晶球 -->
         <div class="hero-obj" data-name="crystal-big" id="obj-crystal-big">
-            <img src="hero-组件/球1.png" alt="水晶球">
+            <img src="hero-组件/球1.webp" alt="水晶球">
         </div>
 
         <!-- 小法球-->
         <div class="hero-obj" data-name="orb1" id="obj-orb1">
-            <img src="hero-组件/球2.png" alt="法球">
+            <img src="hero-组件/球2.webp" alt="法球">
         </div>
 
         <!-- 绿色瓶子 -->
         <div class="hero-obj" data-name="bottle" id="obj-bottle">
-            <img src="hero-组件/壶.png" alt="瓶子">
+            <img src="hero-组件/壶.webp" alt="瓶子">
         </div>
 
         <!-- 海螺 -->
         <div class="hero-obj" data-name="shell" id="obj-shell">
-            <img src="hero-组件/螺.png" alt="海螺">
+            <img src="hero-组件/螺.webp" alt="海螺">
         </div>
 
         <!-- 另一个水晶球 -->
         <div class="hero-obj" data-name="crystal-small" id="obj-crystal-small">
-            <img src="hero-组件/球3.png" alt="水晶球">
+            <img src="hero-组件/球3.webp" alt="水晶球">
         </div>
 
         <!-- 光晕粒子 -->
@@ -18027,6 +18027,11 @@
         const glowParallaxDepth = [56, 44, 64, 50, 42, 58, 48, 60, 52, 40, 62];
 
         function animateFrame() {
+            if (!hoveredObj && Math.abs(targetX) < 0.05 && Math.abs(targetY) < 0.05) {
+                time += 0.008;
+                targetX = Math.sin(time) * 0.12;
+                targetY = Math.cos(time * 0.7) * 0.08;
+            }
             currentX = lerp(currentX, targetX, 0.08);
             currentY = lerp(currentY, targetY, 0.08);
 
@@ -18050,7 +18055,20 @@
             rafId = requestAnimationFrame(animateFrame);
         }
 
-        rafId = requestAnimationFrame(animateFrame);
+        if (hero) {
+            const heroAnimationObserver = new IntersectionObserver(([entry]) => {
+                if (entry.isIntersecting && rafId === null) {
+                    rafId = requestAnimationFrame(animateFrame);
+                } else if (!entry.isIntersecting && rafId !== null) {
+                    cancelAnimationFrame(rafId);
+                    rafId = null;
+                    targetX = 0;
+                    targetY = 0;
+                    hoveredObj = null;
+                }
+            });
+            heroAnimationObserver.observe(hero);
+        }
 
         // 鼠标移动追踪
         hero?.addEventListener('mousemove', (e) => {
@@ -18075,17 +18093,6 @@
                 if (hoveredObj === obj) hoveredObj = null;
             });
         });
-
-        // 自动浮动（无鼠标时）
-        function autoFloat() {
-            if (!hoveredObj && Math.abs(targetX) < 0.05 && Math.abs(targetY) < 0.05) {
-                time += 0.008;
-                targetX = Math.sin(time) * 0.12;
-                targetY = Math.cos(time * 0.7) * 0.08;
-            }
-            requestAnimationFrame(autoFloat);
-        }
-        autoFloat();
 
         // ===== 滚动显示动画（Intersection Observer�?=====
         const revealElements = document.querySelectorAll('.reveal');
@@ -19435,6 +19442,7 @@
                     : 'prev';
                 const currentSrc = featureImages[currentIndex];
                 const nextSrc = featureImages[normalizedIndex];
+                featureIndex = normalizedIndex;
 
                 featureBook?.classList.remove('is-turning-next', 'is-turning-prev');
                 setTurningImage(direction === 'next' ? currentSrc : nextSrc, `翻页中的第 ${direction === 'next' ? currentIndex + 1 : normalizedIndex + 1} 张美宣图`);
@@ -19442,13 +19450,11 @@
                 if (direction === 'next') {
                     renderFeatureBook(normalizedIndex);
                     featureBook?.classList.add('is-turning-next');
-                    featureIndex = normalizedIndex;
                 } else {
                     featureBook?.classList.add('is-turning-prev');
                     window.setTimeout(() => {
                         renderFeatureBook(normalizedIndex);
-                        featureIndex = normalizedIndex;
-                    }, 300);
+                    }, 150);
                 }
 
                 window.setTimeout(() => {
@@ -19459,15 +19465,14 @@
                     if (queuedIndex !== null && queuedIndex !== featureIndex) {
                         setFeaturePage(queuedIndex);
                     }
-                }, 700);
+                }, 320);
             }
 
             renderFeatureBook(featureIndex);
-            featurePrev?.addEventListener('click', () => setFeaturePage(featureIndex - 1));
-            featureNext?.addEventListener('click', () => setFeaturePage(featureIndex + 1));
+            featurePrev?.addEventListener('click', () => setFeaturePage((featurePendingIndex ?? featureIndex) - 1));
+            featureNext?.addEventListener('click', () => setFeaturePage((featurePendingIndex ?? featureIndex) + 1));
             featureDots.forEach((dot, dotIndex) => {
                 dot.addEventListener('click', () => setFeaturePage(dotIndex));
-                dot.addEventListener('mouseenter', () => setFeaturePage(dotIndex));
             });
 
             function openFeatureLightbox(src, alt) {
