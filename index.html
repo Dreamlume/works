@@ -9999,15 +9999,6 @@
             gap: clamp(7px, .7vw, 10px);
         }
 
-        #ua-creative .ua-wall-row {
-            overflow-x: auto;
-        }
-
-        #ua-creative .ua-wall-track {
-            animation: none;
-            will-change: auto;
-        }
-
         img[data-wait-for-image] {
             visibility: hidden;
         }
@@ -19026,6 +19017,14 @@
                 uaWall?.classList.toggle('is-paused', isPaused);
             }
 
+            function chunkUaItems(items, size) {
+                const chunks = [];
+                for (let index = 0; index < items.length; index += size) {
+                    chunks.push(items.slice(index, index + size));
+                }
+                return chunks;
+            }
+
             function interleaveUaItems(primaryItems, secondaryItems) {
                 const merged = [];
                 const maxLength = Math.max(primaryItems.length, secondaryItems.length);
@@ -19041,14 +19040,8 @@
                 const squares = uaCreatives.filter(item => item.type === 'square');
                 const portraits = uaCreatives.filter(item => item.type === 'portrait');
                 const mixed = interleaveUaItems(squares, portraits);
-                const landscapeRows = Math.ceil(landscapes.length / 7);
-                const balancedRows = Array.from({ length: landscapeRows }, (_, index) => {
-                    const start = Math.floor(index * landscapes.length / landscapeRows);
-                    const end = Math.floor((index + 1) * landscapes.length / landscapeRows);
-                    return { type: 'landscape', items: landscapes.slice(start, end) };
-                });
                 return [
-                    ...balancedRows,
+                    ...chunkUaItems(landscapes, 7).map(items => ({ type: 'landscape', items })),
                     { type: 'mixed', items: mixed }
                 ].filter(row => row.items.length).map((row, rowIndex) => ({
                     rowIndex,
@@ -19060,18 +19053,22 @@
                 if (!uaWall) return;
                 uaRows.splice(0, uaRows.length, ...buildUaRows());
                 uaWall.innerHTML = uaRows.map(row => {
-                    const renderPoster = (item, colIndex) => `
-                        <button class="ua-wall-poster is-${item.type}" type="button" data-ua-index="${item.index}" data-ua-col-index="${colIndex}" data-ua-row-count="${row.items.length}" data-ua-layout-row="${row.rowIndex}" data-ua-row="${row.type}" data-ratio="${item.ratio}" aria-label="买量图 ${String(item.index + 1).padStart(2, '0')} ${item.ratio}">
-                            <img loading="lazy" decoding="async" data-wait-for-image data-original-src="${item.src}" src="${item.src.replace(/\.[^.]+$/, '.display.webp')}" alt="买量图 ${String(item.index + 1).padStart(2, '0')}">
+                    const isReverse = (row.type === 'landscape' && row.rowIndex % 2 === 1) || row.type === 'mixed';
+                    const loopSets = [0, 1, 2, 3];
+                    const renderPoster = (item, colIndex, isClone = false) => `
+                        <button class="ua-wall-poster is-${item.type}${isClone ? ' is-clone' : ''}" type="button" data-ua-index="${item.index}" data-ua-col-index="${colIndex}" data-ua-row-count="${row.items.length}" data-ua-layout-row="${row.rowIndex}" data-ua-row="${row.type}" data-ratio="${item.ratio}" ${isClone ? 'tabindex="-1" aria-hidden="true"' : `aria-label="买量图 ${String(item.index + 1).padStart(2, '0')} ${item.ratio}"`}>
+                            <img loading="lazy" decoding="async" width="${item.ratio.split(':')[0]}" height="${item.ratio.split(':')[1]}" data-wait-for-image data-original-src="${item.src}" src="${item.src.replace(/\.[^.]+$/, '.display.webp')}" alt="买量图 ${String(item.index + 1).padStart(2, '0')}">
                         </button>
                     `;
                     return `
-                        <div class="ua-wall-row is-${row.type}" data-ua-layout-row="${row.rowIndex}" data-ua-row="${row.type}">
+                        <div class="ua-wall-row is-${row.type}${isReverse ? ' is-reverse' : ''}" data-ua-layout-row="${row.rowIndex}" data-ua-row="${row.type}">
                             <span class="ua-wall-row-label">${uaRowLabels[row.type]}</span>
                             <div class="ua-wall-track">
-                                <div class="ua-wall-loop-set">
-                                    ${row.items.map(renderPoster).join('')}
-                                </div>
+                                ${loopSets.map(setIndex => `
+                                    <div class="ua-wall-loop-set"${setIndex > 0 ? ' aria-hidden="true"' : ''}>
+                                        ${row.items.map((item, colIndex) => renderPoster(item, colIndex, setIndex > 0)).join('')}
+                                    </div>
+                                `).join('')}
                             </div>
                         </div>
                     `;
@@ -19952,10 +19949,8 @@
                 return matches[0]?.index ?? null;
             }
 
-            let activeTeaserObserver;
             function renderVideoCards() {
                 if (!videoStage) return;
-                activeTeaserObserver?.disconnect();
                 const items = getVideoItems();
                 videoStage.innerHTML = '';
                 items.forEach((item, index) => {
@@ -20001,12 +19996,7 @@
                         return previewVideo;
                     };
                     if (offset === 0) {
-                        activeTeaserObserver = new IntersectionObserver(([entry], observer) => {
-                            if (!entry.isIntersecting) return;
-                            observer.disconnect();
-                            loadPreviewVideo();
-                        });
-                        activeTeaserObserver.observe(card);
+                        window.requestAnimationFrame(loadPreviewVideo);
                     }
                     card.addEventListener('mouseenter', () => {
                         loadPreviewVideo();
