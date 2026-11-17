@@ -18921,6 +18921,30 @@
         }
 
         document.querySelectorAll('img[src^="筛选/紫龙2/"]').forEach(image => {
+            if (location.hostname === 'dreamlume.github.io' && image.closest('.core-material-thumb')) {
+                const original = new URL(image.src);
+                const repositoryPath = original.pathname.replace(/^\/works\//, '/');
+                let fallbackStarted = false;
+                let fallbackTimer;
+                const loadBackup = () => {
+                    if (fallbackStarted || (image.complete && image.naturalWidth)) return;
+                    fallbackStarted = true;
+                    const backup = new Image();
+                    backup.src = 'https://raw.githubusercontent.com/Dreamlume/works/main' + repositoryPath;
+                    backup.decode().then(() => {
+                        if (!(image.complete && image.naturalWidth)) image.src = backup.src;
+                    }).catch(() => {});
+                };
+                image.addEventListener('load', () => clearTimeout(fallbackTimer), { once: true });
+                image.addEventListener('error', loadBackup, { once: true });
+                loadImagesNearViewport(image, () => {
+                    image.loading = 'eager';
+                    if (!(image.complete && image.naturalWidth)) {
+                        fallbackTimer = setTimeout(loadBackup, 4000);
+                    }
+                }, 900);
+                return;
+            }
             const retryOriginal = () => {
                 const url = new URL(image.src);
                 url.searchParams.set('retry', '1');
